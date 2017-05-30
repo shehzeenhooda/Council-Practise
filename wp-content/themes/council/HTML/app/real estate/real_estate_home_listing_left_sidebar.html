@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Real Estate: Home Listing Left Sidebar | Frexy Responsive HTML Template</title>
+    @@include('../templates/header-links.html')
+</head>
+<body>
+@@include('../templates/header.html')
+@@include('../templates/inner-header-description.html', {"title": "Real Estate Home Listing", "description": "Left Sidebar"})
+<div class="l-main-container">
+
+    <div class="b-breadcrumbs f-breadcrumbs">
+        <div class="container">
+            <ul>
+                <li><a href="#"><i class="fa fa-home"></i>Home</a></li>
+                <li><i class="fa fa-angle-right"></i><a href="#">Real Estate</a></li>
+                <li><i class="fa fa-angle-right"></i><span>Home Listing Left Sidebar</span></li>
+            </ul>
+        </div>
+    </div>
+    <div class="l-inner-page-container">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9 col-md-push-3">
+                    @@include('../shared/real_estate/real_estate_sidebar_content.html', {
+                    "src": "img/real_state/real_estate_content-1.jpg",
+                    "title": "5421 Southwest 39th Terrace",
+                    "cost": "$3,850 Per Month",
+                    "duration": "",
+                    "href": "real_estate_home_detail_left_sidebar.html"
+                    })
+
+                    @@include('../shared/real_estate/real_estate_sidebar_content.html', {
+                    "src": "img/real_state/real_estate_content-2.jpg",
+                    "title": "700 Front Street, Key West, FL",
+                    "cost": "$3,850 Per Month",
+                    "duration": "",
+                    "href": "real_estate_home_detail_left_sidebar.html"
+                    })
+
+                    @@include('../shared/real_estate/real_estate_sidebar_content.html', {
+                    "src": "img/real_state/real_estate_content-3.jpg",
+                    "title": "1903 Hollywood Boulevard",
+                    "cost": "$3,850 Per Month",
+                    "duration": "",
+                    "href": "real_estate_home_detail_left_sidebar.html"
+                    })
+
+                    @@include('../shared/real_estate/real_estate_sidebar_content.html', {
+                    "src": "img/real_state/real_estate_content-4.jpg",
+                    "title": "401 Biscayne Boulevard, Miami",
+                    "cost": "$3,850 Per Month",
+                    "duration": "",
+                    "href": "real_estate_home_detail_left_sidebar.html"
+                    })
+
+                    @@include('../shared/real_estate/real_estate_sidebar_content.html', {
+                    "src": "img/real_state/real_estate_content-5.jpg",
+                    "title": "3015 Grand Avenue, CocoWalk",
+                    "cost": "$3,850 Per Month",
+                    "duration": "",
+                    "href": "real_estate_home_detail_left_sidebar.html"
+                    })
+
+                    @@include('../shared/paging.html')
+                </div>
+                <div class="visible-xs-block visible-sm-block b-hr"></div>
+                <div class="col-md-3 col-md-pull-9">
+                    <div class="row">
+                        <div class="col-md-12">
+                            @@include('../shared/real_estate/real_estate_search_hotel.html')
+                        </div>
+                    </div>
+                    <div class="row b-col-default-indent">
+                        <div class="col-md-12">
+                            @@include('../shared/real_estate/real_estate_categories.html', {
+                            "title": "Property Types"
+                            })
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            @@include('../shared/real_estate/real_estate_accordion.html', {
+                            "title": "Featured Properties"
+                            })
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+@@include('../templates/footer.html')
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Travel: Hotels Listing | Frexy Responsive HTML Template</title>
+    @@include('../templates/header-links.html')
+</head>
+<body>
+    @@include('../templates/header.html')
+    @@include('../templates/inner-header-description.html', {"title": "Hotels Listing", "description": "Hotels listing"})
+    <div class="l-main-container">
+
+        <div class="b-breadcrumbs f-breadcrumbs">
+            <div class="container">
+                <ul>
+                    <li><a href="#"><i class="fa fa-home"></i>Home</a></li>
+                    <li><i class="fa fa-angle-right"></i><a href="#">Travel</a></li>
+                    <li><i class="fa fa-angle-right"></i><span>Hotels listing</span></li>
+                </ul>
+            </div>
+        </div>
+
+        <section class="b-infoblock--small">
+            <div class="container">
+                <div class="row b-col-default-indent f-some-examples f-some-examples-quaternary ">
+                    <div class="col-md-4 col-sm-6">
+                        @@include('../shared/hotels_block.html', {"title": "Tropicana hotel", "image": "img/travel/travel_1.jpg", "button": "Book now", "middle_block": "stars_reviews", "href": "travel_hotels_details_left_slidebar.html"})
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        @@include('../shared/hotels_block.html', {"title": "Mabely Grand Hotel", "image": "img/travel/travel_2.jpg", "button": "Book now", "middle_block": "stars_reviews", "href": "travel_hotels_details_left_slidebar.html"})
+                    </div>
+                    <div class="clearfix visible-sm-block"></div>
+                    <div class="col-md-4 col-sm-6">
+                        @@include('../shared/hotels_block.html', {"title": "Roosevelt hotel", "image": "img/travel/travel_3.jpg", "button": "Book now", "middle_block": "stars_reviews", "href": "travel_hotels_details_left_slidebar.html"})
+                    </div>
+                    <div class="clearfix visible-md visible-lg"></div>
+                    <div class="col-md-4 col-sm-6">
+                        @@include('../shared/hotels_block.html', {"title": "Tropicana hotel", "image": "img/travel/travel_1.jpg", "button": "Book now", "middle_block": "stars_reviews", "href": "travel_hotels_details_left_slidebar.html"})
+                    </div>
+                    <div class="clearfix visible-sm-block"></div>
+                    <div class="col-md-4 col-sm-6">
+                        @@include('../shared/hotels_block.html', {"title": "Mabely Grand Hotel", "image": "img/travel/travel_2.jpg", "button": "Book now", "middle_block": "stars_reviews", "href": "travel_hotels_details_left_slidebar.html"})
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        @@include('../shared/hotels_block.html', {"title": "Roosevelt hotel", "image": "img/travel/travel_3.jpg", "button": "Book now", "middle_block": "stars_reviews", "href": "travel_hotels_details_left_slidebar.html"})
+                    </div>
+                    <div class="clearfix visible-sm visible-md visible-lg"></div>
+                    <div class="col-md-4 col-sm-6">
+                        @@include('../shared/hotels_block.html', {"title": "Tropicana hotel", "image": "img/travel/travel_1.jpg", "button": "Book now", "middle_block": "stars_reviews", "href": "travel_hotels_details_left_slidebar.html"})
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        @@include('../shared/hotels_block.html', {"title": "Mabely Grand Hotel", "image": "img/travel/travel_2.jpg", "button": "Book now", "middle_block": "stars_reviews", "href": "travel_hotels_details_left_slidebar.html"})
+                    </div>
+                    <div class="clearfix visible-sm-block"></div>
+                    <div class="col-md-4 col-sm-6">
+                        @@include('../shared/hotels_block.html', {"title": "Roosevelt hotel", "image": "img/travel/travel_3.jpg", "button": "Book now", "middle_block": "stars_reviews", "href": "travel_hotels_details_left_slidebar.html"})
+                    </div>
+                    <div class="clearfix visible-md visible-lg"></div>
+                    <div class="col-md-4 col-sm-6">
+                        @@include('../shared/hotels_block.html', {"title": "Tropicana hotel", "image": "img/travel/travel_1.jpg", "button": "Book now", "middle_block": "stars_reviews", "href": "travel_hotels_details_left_slidebar.html"})
+                    </div>
+                    <div class="clearfix visible-sm-block"></div>
+                    <div class="col-md-4 col-sm-6">
+                        @@include('../shared/hotels_block.html', {"title": "Mabely Grand Hotel", "image": "img/travel/travel_2.jpg", "button": "Book now", "middle_block": "stars_reviews", "href": "travel_hotels_details_left_slidebar.html"})
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        @@include('../shared/hotels_block.html', {"title": "Roosevelt hotel", "image": "img/travel/travel_3.jpg", "button": "Book now", "middle_block": "stars_reviews", "href": "travel_hotels_details_left_slidebar.html"})
+                    </div>
+                    <div class="clearfix visible-sm visible-md visible-lg"></div>
+                 </div>
+                <div class="b-shortcode-example b-null-bottom-indent">
+                    @@include('../shared/paging.html')
+                </div>
+            </div>
+        </section>
+
+    </div>
+    @@include('../templates/footer.html')
+</body>
+</html>

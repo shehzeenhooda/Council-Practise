@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Shopping: List Row | Frexy Responsive HTML Template</title>
+    @@include('../templates/header-links.html')
+</head>
+<body>
+    @@include('../templates/header.html')
+    @@include('../templates/inner-header-description.html', {"title": "Online store", "description": "This is online store listing products sample page"})
+    <div class="l-main-container">
+
+        <div class="b-breadcrumbs f-breadcrumbs">
+            <div class="container">
+                <ul>
+                    <li><a href=""><i class="fa fa-home"></i>Home</a></li>
+                    <li><i class="fa fa-angle-right"></i><a href="#">Shopping</a></li>
+                    <li><i class="fa fa-angle-right"></i><span>Listing Row</span></li>
+                </ul>
+            </div>
+        </div>
+
+        <section class="b-infoblock">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-9 ">
+                        @@include('../shared/shop/shop_sort_panel.html')
+                            <div class="row">
+
+
+                                <div class="b-col-default-indent">
+                                    <div class="col-md-12">
+                                        @@include('../shared/shop/product_preview_row.html', {"src" : "img/shop/shop_2.png",
+                                        "action-info" : "<div class='b-action-info--default f-action-info--default f-primary-b'>sale</div>"
+                                        })
+                                    </div>
+                                    <div class="col-md-12">
+                                        @@include('../shared/shop/product_preview_row.html', {"src" : "img/shop/shop_3.png",
+                                        "action-info" : "<div class='b-action-info--default--secondary f-action-info--default f-primary-b'>popular</div>"
+                                        })
+                                    </div>
+                                    <div class="col-md-12">
+                                        @@include('../shared/shop/product_preview_row.html', {"src" : "img/shop/shop_4.png",
+                                        "action-info" : "<div class='b-action-info--default--secondary f-action-info--default f-primary-b'>popular</div>"
+                                        })
+                                    </div>
+                                    <div class="col-md-12">
+                                        @@include('../shared/shop/product_preview_row.html', {"src" : "img/shop/shop_6.png",
+                                        "action-info" : "<div class='b-action-info--default--secondary f-action-info--default f-primary-b'>popular</div>"
+                                        })
+                                    </div>
+                                    <div class="col-md-12">
+                                        @@include('../shared/shop/product_preview_row.html', {"src" : "img/shop/shop_5.png",
+                                        "action-info" : "<div class='b-action-info--default--secondary f-action-info--default f-primary-b'>popular</div>"
+                                        })
+                                    </div>
+                                </div>
+                            </div>
+
+                            @@include('../shared/paging.html')
+
+                    </div>
+                    <div class="col-md-3">
+                        @@include('../shared/shop/shop_aside.html')
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+    @@include('../templates/footer.html')
+</body>
+</html>

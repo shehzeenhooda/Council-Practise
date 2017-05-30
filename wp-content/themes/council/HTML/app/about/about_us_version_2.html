@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>About us: v2 | Frexy Responsive HTML Template</title>
+  @@include('../templates/header-links.html')
+</head>
+<body>
+    @@include('../templates/header.html')
+    @@include('../templates/inner-header.html', {"title": "About us"})
+<div class="l-main-container">
+
+<div class="b-breadcrumbs f-breadcrumbs">
+    <div class="container">
+        <ul>
+            <li><a href="#"><i class="fa fa-home"></i>Home</a></li>
+            <li><i class="fa fa-angle-right"></i><a href="#">About us</a></li>
+            <li><i class="fa fa-angle-right"></i><span>Version 2</span></li>
+        </ul>
+    </div>
+</div>
+@@include('../shared/about_us_presentation.html')
+<section class="b-infoblock">
+    <div class="container">
+        <h3 class="f-primary-b">our history</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed porttitor ligula sit amet ante facilisis, id rutrum est varius. Quisque facilisis lorem vitae lacus volutpat porttitor condimentum vitae est. Mauris gravida quam dui, ac aliquet quam rhoncus et. Donec in mi eget libero aliquet bibendum. </p>
+        <div class="b-history b-progress-tab j-progress-tab">
+            <div class="b-history__timeline">
+                <div class="b-default-top-indent b-relative">
+                    <div class="b-steps-progressbar f-steps-progressbar">
+                        <div class="progress" data-progressbar="steps_pb">
+                            <div class="progress-bar" role="progressbar" data-step="4" data-transitiongoal></div>
+                            <ul class="progress-steps" data-padding="3">
+                                <li class="progress-step f-primary-b" data-transitiongoal="0"><div class="progress-step__text">2010</div><i class="progress-step__dot"></i></li>
+                                <li class="progress-step f-primary-b" data-transitiongoal="20"><div class="progress-step__text">2011</div><i class="progress-step__dot"></i></li>
+                                <li class="progress-step f-primary-b" data-transitiongoal="40"><div class="progress-step__text">2012</div><i class="progress-step__dot"></i></li>
+                                <li class="progress-step f-primary-b" data-transitiongoal="60"><div class="progress-step__text">2013</div><i class="progress-step__dot"></i></li>
+                                <li class="progress-step f-primary-b" data-transitiongoal="80"><div class="progress-step__text">2014</div><i class="progress-step__dot"></i></li>
+                                <li class="progress-step f-primary-b" data-transitiongoal="100"><div class="progress-step__text">2015</div><i class="progress-step__dot"></i></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="b-progress-tab-arr"></div>
+            <div class="b-history__info">
+                <div class="b-tab-progress b-infoblock-with-icon-group row b-infoblock-with-icon--circle-icon">
+                    @@include('../shared/small_icons_list.html', {"text": "Tab 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ut massa in. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia. Ellentesque vehicula a neque eu"})
+                </div>
+                <div class="b-tab-progress b-infoblock-with-icon-group row b-infoblock-with-icon--circle-icon">
+                    @@include('../shared/small_icons_list.html', {"text": "Tab 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ut massa in. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia. Ellentesque vehicula a neque eu"})
+                </div>
+                <div class="b-tab-progress b-infoblock-with-icon-group row b-infoblock-with-icon--circle-icon">
+                    @@include('../shared/small_icons_list.html', {"text": "Tab 3. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ut massa in. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia. Ellentesque vehicula a neque eu"})
+                </div>
+                <div class="b-tab-progress b-infoblock-with-icon-group row b-infoblock-with-icon--circle-icon">
+                    @@include('../shared/small_icons_list.html', {"text": "Tab 4. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ut massa in. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia. Ellentesque vehicula a neque eu"})
+                </div>
+                <div class="b-tab-progress b-infoblock-with-icon-group row b-infoblock-with-icon--circle-icon">
+                    @@include('../shared/small_icons_list.html', {"text": "Tab 5. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ut massa in. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia. Ellentesque vehicula a neque eu"})
+                </div>
+                <div class="b-tab-progress b-infoblock-with-icon-group row b-infoblock-with-icon--circle-icon">
+                    @@include('../shared/small_icons_list.html', {"text": "Tab 6. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ut massa in. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia. Ellentesque vehicula a neque eu"})
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+<section class="b-diagonal-line-bg-light b-bg-full-primary">
+    <div class="container b-infoblock--without-border b-infoblock--small">
+        <div class="row b-col-default-indent">
+            <div class="col-sm-6">
+                <h3 class="f-primary-b">Our skills</h3>
+                <p class="f-primary-l ">Quisque at tortor a libero posuere laoreet vitae sed arcu nunc at augue tincidunt</p>
+                @@include('../shared/accordion_widget.html')
+            </div>
+            <div class="col-sm-6">
+                <h3 class="f-primary-b">Our services</h3>
+                <p class="f-primary-l ">Quisque at tortor a libero posuere laoreet vitae sed arcu nunc at augue tincidunt</p>
+                <div class="b-tabs f-tabs j-tabs b-tabs-reset">
+                    <ul>
+                        <li><a href="#tabs-21">Active tab</a></li>
+                        <li><a href="#tabs-22">In-active tab</a></li>
+                        <li><a href="#tabs-23"><i class="fa fa-flask"></i></a></li>
+                    </ul>
+                    <div class="b-tabs__content">
+                        <div id="tabs-21">
+                            <h4 class="f-tabs-vertical__title f-primary-b"><a href="our_services_version_1.html">Suspendisse vitae metus enim</a></h4>
+                            <p>Maecenas laoreet commodo arcu, eu semper lacus tincidunt eget. Vestibulum at arcu pulvinar, fermentum sapien nec, tristique dui. Ut feugiat est at sapien ullamcorper viverra. Vestibulum pretium malesuada elit rutrum condimentum. Donec bibendum scelerisque odio vulputate viverra. Pellentesque habitant morbi tristique senectus et netus et malesuada fames acipsum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod purus eu sapien faucibus, quis porta ipsum accumsan.</p><a href="our_services_version_1.html" class="f-more f-primary-b">Read more</a>
+                        </div>
+                        <div id="tabs-22">
+                            <h4 class="f-tabs-vertical__title f-primary-b"><a href="our_services_version_1.html">Suspendisse vitae metus enim 2</a></h4>
+                            <p>Maecenas laoreet commodo arcu, eu semper lacus tincidunt eget. Vestibulum at arcu pulvinar, fermentum sapien nec, tristique dui. Ut feugiat est at sapien ullamcorper viverra. Vestibulum pretium malesuada elit rutrum condimentum. Donec bibendum scelerisque odio vulputate viverra. Pellentesque habitant morbi tristique senectus et netus et malesuada fames acipsum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod purus eu sapien faucibus, quis porta ipsum accumsan.</p><a href="our_services_version_1.html" class="f-more f-primary-b">Read more</a>
+                        </div>
+                        <div id="tabs-23">
+                            <h4 class="f-tabs-vertical__title f-primary-b"><a href="our_services_version_1.html">Suspendisse vitae metus enim 3</a></h4>
+                            <p>Maecenas laoreet commodo arcu, eu semper lacus tincidunt eget. Vestibulum at arcu pulvinar, fermentum sapien nec, tristique dui. Ut feugiat est at sapien ullamcorper viverra. Vestibulum pretium malesuada elit rutrum condimentum. Donec bibendum scelerisque odio vulputate viverra. Pellentesque habitant morbi tristique senectus et netus et malesuada fames acipsum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod purus eu sapien faucibus, quis porta ipsum accumsan.</p><a href="our_services_version_1.html" class="f-more f-primary-b">Read more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="b-google-map map-theme">
+    @@include('../shared/google_map.html', {
+    "marker": "img/google-map-marker-default.png",
+    "label-marker": "",
+    "selected-marker": 0,
+    "info-window-width": 526,
+    "info-window-inner": "",
+    "info-window": "info_window_address"
+    })
+    @@include('../shared/contact_form.html')
+</section>
+
+</div>
+
+  @@include('../templates/footer.html')
+</body>
+</html>

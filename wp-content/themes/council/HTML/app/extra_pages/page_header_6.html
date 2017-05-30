@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Header 6 | Frexy Responsive HTML Template</title>
+    @@include('../templates/header-links.html')
+</head>
+<body>
+  <header>
+      <div class="container b-header__box b-relative">
+          <a href="/" class="b-left b-logo"><img class="color-theme" data-retina src="img/logo-header-default.png" alt="Logo" /></a>
+          <div class="b-header-r b-right b-header-r--icon">
+              <div class="b-header-ico-group f-header-ico-group b-right">
+                  <span class="b-search-box">
+                      <i class="fa fa-search"></i>
+                      <input type="text" placeholder="Enter your keywords"/>
+                  </span>
+                  <span class="b-header-ico b-header-ico-cart-parent" href="#">
+                      <a href="#" class="b-fa-shopping-cart"><i class="fa fa-shopping-cart"></i></a>
+                      @@include('../shared/header-cart-dropdown.html')
+                  </span>
+              </div>
+              <div class="b-top-nav-show-slide f-top-nav-show-slide b-right j-top-nav-show-slide"><i class="fa fa-align-justify"></i></div>
+              <nav class="b-top-nav f-top-nav b-right j-top-nav b-top-nav--icon">
+                  @@include('../templates/header-menu.html')
+              </nav>
+          </div>
+      </div>
+  </header>
+  <div class="j-menu-container"></div>
+  <div class="l-main-container">
+    @@include('../shared/homepage_index/slider.html', {"class": "j-fullscreenslider"})
+    @@include('../shared/homepage_index/content.html')
+  </div>
+
+  @@include('../templates/footer.html')
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Header 7 | Frexy Responsive HTML Template</title>
+    @@include('../templates/header-links.html')
+</head>
+<body>
+  <header class="b-header--big-top-menu">
+      <div class="container b-relative">
+          <a href="/" class="b-left b-logo"><img class="color-theme" data-retina src="img/logo-header-default.png" alt="Logo" /></a>
+          <div class="b-header-r b-right">
+              <div class="b-top-nav-show-slide f-top-nav-show-slide b-right j-top-nav-show-slide"><i class="fa fa-align-justify"></i></div>
+              <nav class="b-top-nav b-top-nav--big-nav f-top-nav b-right j-top-nav b-top-nav--icon">
+                  @@include('../templates/header-menu.html')
+              </nav>
+          </div>
+      </div>
+  </header>
+  <div class="j-menu-container"></div>
+  <div class="l-main-container">
+    @@include('../shared/homepage_index/slider.html', {"class": "j-fullscreenslider"})
+    @@include('../shared/homepage_index/content.html')
+  </div>
+
+  @@include('../templates/footer.html')
+</body>
+</html>

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Our Gallery: 4 Columns | Frexy Responsive HTML Template</title>
+  @@include('../templates/header-links.html')
+</head>
+<body>
+  @@include('../templates/header.html')
+  @@include('../templates/inner-header-description.html', {"title": "Our gallery", "description": "Check our gallery 4 columns layout sample"})
+<div class="l-main-container">
+
+<div class="b-breadcrumbs f-breadcrumbs">
+    <div class="container">
+        <ul>
+            <li><a href="#"><i class="fa fa-home"></i>Home</a></li>
+            <li><i class="fa fa-angle-right"></i><a href="#">Gallery</a></li>
+            <li><i class="fa fa-angle-right"></i><span>4 columns</span></li>
+        </ul>
+    </div>
+</div>
+<section class="b-infoblock--without-border">
+    <div class="container ">
+        <div class="b-category-filter f-category-filter j-filter">
+          <ul>
+            <li class="is-category-filter-active"><a data-filter="all" href="#">All</a></li>
+            <li><a data-filter=".j-filter-portrait" href="#">Portrait</a></li>
+            <li><a data-filter=".j-filter-street" href="#">Street life</a></li>
+            <li><a data-filter=".j-filter-fashion" href="#">Fashion</a></li>
+            <li><a data-filter=".j-filter-landscape" href="#">Landscape</a></li>
+            <li><a data-filter=".j-filter-black-white" href="#">Black and white</a></li>
+            <li><a data-filter=".j-filter-macro" href="#">Macro</a></li>
+          </ul>
+        </div>
+
+      <div class="j-filter-content">
+        <div class="row row b-col-default-indent b-gallery--secondary j-masonry">
+            <div class="masonry-gridSizer col-sm-6 col-md-4 col-lg-3"></div>
+            <div class="j-masonry-item col-sm-6 col-md-4 col-lg-3 j-filter-portrait j-filter-macro">
+                @@include('../shared/gallery_item.html', {
+                "image": "<img data-title='Natural beauty' data-retina='' src='img/gallery/gallery_19.jpg'>",
+                "title": "Natural beauty",
+                "href": "<a href='img/gallery/big/gallery_19.jpg' class='b-btn f-btn b-btn-light f-btn-light fancybox info' rel='gallery1' title='Be my Valentine'><i class='fa fa-arrows-alt'></i></a>"
+                })
+            </div>
+            <div class="j-masonry-item col-sm-6 col-md-4 col-lg-3 j-filter-street j-filter-fashion">
+                @@include('../shared/gallery_item.html', {
+                "image": "<img data-retina='' src='img/gallery/gallery_20.jpg'>",
+                "title": "Some title for picture",
+                "href": "<a href='img/gallery/big/gallery_20.jpg' class='b-btn f-btn b-btn-light f-btn-light fancybox info' rel='gallery1' title='Be my Valentine'><i class='fa fa-arrows-alt'></i></a>"
+                })
+            </div>
+            <div class="j-masonry-item col-sm-6 col-md-4 col-lg-3 j-filter-landscape j-filter-macro">
+                @@include('../shared/gallery_item.html', {
+                "image": "<img data-retina='' src='img/gallery/gallery_21.jpg'>",
+                "title": "Some title for picture",
+                "href": "<a href='img/gallery/big/gallery_21.jpg' class='b-btn f-btn b-btn-light f-btn-light fancybox info' rel='gallery1' title='Be my Valentine'><i class='fa fa-arrows-alt'></i></a>"
+                })
+            </div>
+            <div class="j-masonry-item col-sm-6 col-md-4 col-lg-3 j-filter-portrait j-filter-macro">
+                @@include('../shared/gallery_item.html', {
+                "image": "<img data-retina='' src='img/gallery/gallery_22.jpg'>",
+                "title": "Some title for picture",
+                "href": "<a href='img/gallery/big/gallery_22.jpg' class='b-btn f-btn b-btn-light f-btn-light fancybox info' rel='gallery1' title='Be my Valentine'><i class='fa fa-arrows-alt'></i></a>"
+                })
+            </div>
+            <div class="j-masonry-item col-sm-6 col-md-4 col-lg-3 j-filter-black-white">
+                @@include('../shared/gallery_item.html', {
+                "image": "<img data-retina='' src='img/gallery/gallery_23.jpg'>",
+                "title": "Some title for picture",
+                "href": "<a href='img/gallery/big/gallery_23.jpg' class='b-btn f-btn b-btn-light f-btn-light fancybox info' rel='gallery1' title='Be my Valentine'><i class='fa fa-arrows-alt'></i></a>"
+                })
+            </div>
+            <div class="j-masonry-item col-sm-6 col-md-4 col-lg-3 j-filter-street j-filter-fashion">
+                @@include('../shared/gallery_item.html', {
+                "image": "<img data-retina='' src='img/gallery/gallery_24.jpg'>",
+                "title": "Some title for picture",
+                "href": "<a href='img/gallery/big/gallery_24.jpg' class='b-btn f-btn b-btn-light f-btn-light fancybox info' rel='gallery1' title='Be my Valentine'><i class='fa fa-arrows-alt'></i></a>"
+                })
+            </div>
+            <div class="j-masonry-item col-sm-6 col-md-4 col-lg-3 j-filter-portrait">
+                @@include('../shared/gallery_item.html', {
+                "image": "<img data-retina='' src='img/gallery/gallery_25.jpg'>",
+                "title": "Some title for picture",
+                "href": "<a href='img/gallery/big/gallery_25.jpg' class='b-btn f-btn b-btn-light f-btn-light fancybox info' rel='gallery1' title='Be my Valentine'><i class='fa fa-arrows-alt'></i></a>"
+                })
+            </div>
+            <div class="j-masonry-item col-sm-6 col-md-4 col-lg-3 j-filter-landscape j-filter-black-white">
+                @@include('../shared/gallery_item.html', {
+                "image": "<img data-retina='' src='img/gallery/gallery_26.jpg'>",
+                "title": "Some title for picture",
+                "href": "<a href='img/gallery/big/gallery_26.jpg' class='b-btn f-btn b-btn-light f-btn-light fancybox info' rel='gallery1' title='Be my Valentine'><i class='fa fa-arrows-alt'></i></a>"
+                })
+            </div>
+            <div class="j-masonry-item col-sm-6 col-md-4 col-lg-3 j-filter-landscape">
+                @@include('../shared/gallery_item.html', {
+                "image": "<img data-title='Natural beauty' data-retina='' src='img/gallery/gallery_27.jpg'>",
+                "title": "Natural beauty",
+                "href": "<a href='img/gallery/big/gallery_27.jpg' class='b-btn f-btn b-btn-light f-btn-light fancybox info' rel='gallery1' title='Be my Valentine'><i class='fa fa-arrows-alt'></i></a>"
+                })
+            </div>
+            <div class="j-masonry-item col-sm-6 col-md-4 col-lg-3 j-filter-portrait">
+                @@include('../shared/gallery_item.html', {
+                "image": "<img data-retina='' src='img/gallery/gallery_28.jpg'>",
+                "title": "Some title for picture",
+                "href": "<a href='img/gallery/big/gallery_28.jpg' class='b-btn f-btn b-btn-light f-btn-light fancybox info' rel='gallery1' title='Be my Valentine'><i class='fa fa-arrows-alt'></i></a>"
+                })
+            </div>
+            <div class="j-masonry-item col-sm-6 col-md-4 col-lg-3 j-filter-street j-filter-fashion">
+                @@include('../shared/gallery_item.html', {
+                "image": "<img data-retina='' src='img/gallery/gallery_29.jpg'>",
+                "title": "Some title for picture",
+                "href": "<a href='img/gallery/big/gallery_29.jpg' class='b-btn f-btn b-btn-light f-btn-light fancybox info' rel='gallery1' title='Be my Valentine'><i class='fa fa-arrows-alt'></i></a>"
+                })
+            </div>
+            <div class="j-masonry-item col-sm-6 col-md-4 col-lg-3 j-filter-black-white">
+                @@include('../shared/gallery_item.html', {
+                "image": "<img data-retina='' src='img/gallery/gallery_30.jpg'>",
+                "title": "Some title for picture",
+                "href": "<a href='img/gallery/big/gallery_30.jpg' class='b-btn f-btn b-btn-light f-btn-light fancybox info' rel='gallery1' title='Be my Valentine'><i class='fa fa-arrows-alt'></i></a>"
+                })
+            </div>
+            <div class="j-masonry-item col-sm-6 col-md-4 col-lg-3 j-filter-portrait j-filter-macro">
+                @@include('../shared/gallery_item.html', {
+                "image": "<img data-retina='' src='img/gallery/gallery_31.jpg'>",
+                "title": "Some title for picture",
+                "href": "<a href='img/gallery/big/gallery_31.jpg' class='b-btn f-btn b-btn-light f-btn-light fancybox info' rel='gallery1' title='Be my Valentine'><i class='fa fa-arrows-alt'></i></a>"
+                })
+            </div>
+            <div class="j-masonry-item col-sm-6 col-md-4 col-lg-3 j-filter-street j-filter-macro">
+                @@include('../shared/gallery_item.html', {
+                "image": "<img data-retina='' src='img/gallery/gallery_32.jpg'>",
+                "title": "Some title for picture",
+                "href": "<a href='img/gallery/big/gallery_32.jpg' class='b-btn f-btn b-btn-light f-btn-light fancybox info' rel='gallery1' title='Be my Valentine'><i class='fa fa-arrows-alt'></i></a>"
+                })
+            </div>
+            <div class="j-masonry-item col-sm-6 col-md-4 col-lg-3 j-filter-portrait j-filter-fashion">
+                @@include('../shared/gallery_item.html', {
+                "image": "<img data-retina='' src='img/gallery/gallery_33.jpg'>",
+                "title": "Some title for picture",
+                "href": "<a href='img/gallery/big/gallery_33.jpg' class='b-btn f-btn b-btn-light f-btn-light fancybox info' rel='gallery1' title='Be my Valentine'><i class='fa fa-arrows-alt'></i></a>"
+                })
+            </div>
+            <div class="j-masonry-item col-sm-6 col-md-4 col-lg-3 j-filter-landscape">
+                @@include('../shared/gallery_item.html', {
+                "image": "<img data-retina='' src='img/gallery/gallery_34.jpg'>",
+                "title": "Some title for picture",
+                "href": "<a href='img/gallery/big/gallery_34.jpg' class='b-btn f-btn b-btn-light f-btn-light fancybox info' rel='gallery1' title='Be my Valentine'><i class='fa fa-arrows-alt'></i></a>"
+                })
+            </div>
+            <div class="j-masonry-item col-sm-6 col-md-4 col-lg-3 j-filter-portrait j-filter-macro">
+                @@include('../shared/gallery_item.html', {
+                "image": "<img data-retina='' src='img/gallery/gallery_35.jpg'>",
+                "title": "Some title for picture",
+                "href": "<a href='img/gallery/big/gallery_35.jpg' class='b-btn f-btn b-btn-light f-btn-light fancybox info' rel='gallery1' title='Be my Valentine'><i class='fa fa-arrows-alt'></i></a>"
+                })
+            </div>
+            <div class="j-masonry-item col-sm-6 col-md-4 col-lg-3 j-filter-black-white">
+                @@include('../shared/gallery_item.html', {
+                "image": "<img data-retina='' src='img/gallery/gallery_36.jpg'>",
+                "title": "Some title for picture",
+                "href": "<a href='img/gallery/big/gallery_36.jpg' class='b-btn f-btn b-btn-light f-btn-light fancybox info' rel='gallery1' title='Be my Valentine'><i class='fa fa-arrows-alt'></i></a>"
+                })
+            </div>
+            <div class="j-masonry-item col-sm-6 col-md-4 col-lg-3 j-filter-street j-filter-black-white">
+                @@include('../shared/gallery_item.html', {
+                "image": "<img data-retina='' src='img/gallery/gallery_37.jpg'>",
+                "title": "Some title for picture",
+                "href": "<a href='img/gallery/big/gallery_37.jpg' class='b-btn f-btn b-btn-light f-btn-light fancybox info' rel='gallery1' title='Be my Valentine'><i class='fa fa-arrows-alt'></i></a>"
+                })
+            </div>
+            <div class="j-masonry-item col-sm-6 col-md-4 col-lg-3 j-filter-portrait j-filter-fashion">
+                @@include('../shared/gallery_item.html', {
+                "image": "<img data-retina='' src='img/gallery/gallery_38.jpg'>",
+                "title": "Some title for picture",
+                "href": "<a href='img/gallery/big/gallery_38.jpg' class='b-btn f-btn b-btn-light f-btn-light fancybox info' rel='gallery1' title='Be my Valentine'><i class='fa fa-arrows-alt'></i></a>"
+                })
+            </div>
+        </div>
+        <div class="b-default-top-indent b-remaining b-remaining--full-width">
+            @@include('../shared/separators/load_more.html')
+        </div>
+      </div>
+    </div>
+</section>
+
+
+</div>
+
+  @@include('../templates/footer.html')
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Portfolio: Masonry | Frexy Responsive HTML Template</title>
+    @@include('../templates/header-links.html')
+</head>
+<body>
+@@include('../templates/header.html')
+@@include('../templates/inner-header-description.html', {"title": "Our portfolio", "description": "Check our portfolio 3 columns layout sample"})
+
+<div class="l-main-container">
+    <div class="b-breadcrumbs f-breadcrumbs">
+        <div class="container">
+            <ul>
+                <li><a href="#"><i class="fa fa-home"></i>Home</a></li>
+                <li><i class="fa fa-angle-right"></i><a href="#"> Portfolio</a></li>
+                <li><i class="fa fa-angle-right"></i><span> Masonry  Portfolio</span></li>
+            </ul>
+        </div>
+    </div>
+    <div class="container ">
+        <div class="l-inner-page-container">
+            <div class="b-margin-bottom-standard">
+                <div class="b-category-filter b-category-filter--portfolio f-category-filter j-filter">
+                    <ul>
+                        <li class="is-category-filter-active"><a data-filter="all" href="#">All</a></li>
+                        <li><a data-filter=".j-filter-graphic" href="#">3D Graphic</a></li>
+                        <li><a data-filter=".j-filter-illustration" href="#">Illustrations</a></li>
+                        <li><a data-filter=".j-filter-web" href="#">Web Design</a></li>
+                        <li><a data-filter=".j-filter-mob" href="#">Mobile Design</a></li>
+                        <li><a data-filter=".j-filter-brand" href="#">Branding Design</a></li>
+                    </ul>
+                </div>
+
+                <div class="j-filter-content">
+                    <div class="row b-portfolio-gallery b-col-default-indent j-masonry b-null-top-indent">
+                        <div class="masonry-gridSizer col-md-3 col-sm-6 col-xs-12"></div>
+                        <div class="j-masonry-item col-md-3 col-sm-6 col-xs-12 f-center j-filter-graphic j-filter-brand">
+                            <div class="b-portfolio__content-item">
+                                @@include('../shared/hover_image/hover_image_portfolio.html', {"src": "img/homepage/portfolio/portfolio-2.jpg", "big": "img/homepage/portfolio/big/portfolio-2.jpg", "href": "portfolio_our_portfolio_detail.html"})
+                            </div>
+                        </div>
+                        <div class="j-masonry-item col-md-3 col-sm-6 col-xs-12 f-center j-filter-graphic j-filter-illustration">
+                            <div class="b-portfolio__content-item">
+                                @@include('../shared/hover_image/hover_image_portfolio.html', {"src": "img/homepage/portfolio/portfolio-1.jpg", "big": "img/homepage/portfolio/big/portfolio-1.jpg", "href": "portfolio_our_portfolio_detail.html"})
+                            </div>
+                        </div>
+                        <div class="j-masonry-item col-md-3 col-sm-6 col-xs-12 f-center j-filter-graphic j-filter-brand">
+                            <div class="b-portfolio__content-item">
+                                @@include('../shared/hover_image/hover_video_portfolio.html', {
+                                "src": "img/portfolio/video-pic.jpg",
+                                "href": "portfolio_our_portfolio_detail.html",
+                                "full": "http://player.vimeo.com/video/48511895"
+                                })
+                            </div>
+                        </div>
+                        <div class="j-masonry-item col-md-3 col-sm-6 col-xs-12 f-center j-filter-web j-filter-mob">
+                            <div class="b-portfolio__content-item">
+                                @@include('../shared/hover_image/hover_image_portfolio.html', {"src": "img/homepage/portfolio/portfolio-3.jpg", "big": "img/homepage/portfolio/big/portfolio-3.jpg", "href": "portfolio_our_portfolio_detail.html"})
+                            </div>
+                        </div>
+                        <div class="j-masonry-item col-md-3 col-sm-6 col-xs-12 f-center j-filter-graphic j-filter-brand">
+                            <div class="b-portfolio__content-item">
+                                @@include('../shared/hover_image/hover_image_portfolio.html', {"src": "img/homepage/portfolio/portfolio-4.jpg", "big": "img/homepage/portfolio/big/portfolio-4.jpg", "href": "portfolio_our_portfolio_detail.html"})
+                            </div>
+                        </div>
+                        <div class="j-masonry-item col-md-3 col-sm-6 col-xs-12 f-center j-filter-illustration j-filter-web">
+                            <div class="b-portfolio__content-item">
+                                @@include('../shared/hover_image/hover_image_portfolio.html', {"src": "img/homepage/portfolio/portfolio-5.jpg", "big": "img/homepage/portfolio/big/portfolio-5.jpg", "href": "portfolio_our_portfolio_detail.html"})
+                            </div>
+                        </div>
+                        <div class="j-masonry-item col-md-3 col-sm-6 col-xs-12 f-center j-filter-mob j-filter-brand">
+                            <div class="b-portfolio__content-item">
+                                @@include('../shared/hover_image/hover_image_portfolio.html', {"src": "img/homepage/portfolio/portfolio-6.jpg", "big": "img/homepage/portfolio/big/portfolio-6.jpg", "href": "portfolio_our_portfolio_detail.html"})
+                            </div>
+                        </div>
+                        <div class="j-masonry-item col-md-3 col-sm-6 col-xs-12 f-center j-filter-graphic j-filter-web">
+                            <div class="b-portfolio__content-item">
+                                @@include('../shared/hover_image/hover_image_portfolio.html', {"src": "img/homepage/portfolio/portfolio-7.jpg", "big": "img/homepage/portfolio/big/portfolio-7.jpg", "href": "portfolio_our_portfolio_detail.html"})
+                            </div>
+                        </div>
+                        <div class="j-masonry-item col-md-3 col-sm-6 col-xs-12 f-center j-filter-graphic j-filter-brand">
+                            <div class="b-portfolio__content-item">
+                                @@include('../shared/hover_image/hover_video_portfolio.html', {
+                                "src": "img/portfolio/video-pic.jpg",
+                                "href": "portfolio_our_portfolio_detail.html",
+                                "full": "http://player.vimeo.com/video/48511895"
+                                })
+                            </div>
+                        </div>
+                        <div class="j-masonry-item col-md-3 col-sm-6 col-xs-12 f-center j-filter-illustration j-filter-mob">
+                            <div class="b-portfolio__content-item">
+                                @@include('../shared/hover_image/hover_image_portfolio.html', {"src": "img/homepage/portfolio/portfolio-8.jpg", "big": "img/homepage/portfolio/big/portfolio-8.jpg", "href": "portfolio_our_portfolio_detail.html"})
+                            </div>
+                        </div>
+                        <div class="j-masonry-item col-md-3 col-sm-6 col-xs-12 f-center j-filter-graphic j-filter-web j-filter-brand">
+                            <div class="b-portfolio__content-item">
+                                @@include('../shared/hover_image/hover_image_portfolio.html', {"src": "img/homepage/portfolio/portfolio-9.jpg", "big": "img/homepage/portfolio/big/portfolio-9.jpg", "href": "portfolio_our_portfolio_detail.html"})
+                            </div>
+                        </div>
+                        <div class="j-masonry-item col-md-3 col-sm-6 col-xs-12 f-center j-filter-illustration j-filter-mob">
+                            <div class="b-portfolio__content-item">
+                                @@include('../shared/hover_image/hover_image_portfolio.html', {"src": "img/homepage/portfolio/portfolio-3.jpg", "big": "img/homepage/portfolio/big/portfolio-3.jpg", "href": "portfolio_our_portfolio_detail.html"})
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="b-btn b-btn-biggest f-btn-biggest f-primary-b f-center b-default-top-indent">LOAD MORE</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+@@include('../templates/footer.html')
+
+</body>
+</html>

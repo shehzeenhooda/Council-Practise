@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Services: v1 | Frexy Responsive HTML Template</title>
+    @@include('../templates/header-links.html')
+</head>
+<body>
+@@include('../templates/header.html')
+
+<div class="l-main-container">
+
+    <section>
+        <div class="b-bg-default b-infoblock">
+            <div class="b-infoblock--without-border">
+                <div class="container b-relative">
+                    <h2 class="c-default f-primary-l f-title-bigger">we design</h2>
+                    <h1 class="c-default f-primary-b f-title-biggest">responsive website</h1>
+                    <h3 class="f-primary-b f-title-big c-senary">Vestibulum pharetra nibh sit</h3>
+                    <a href="portfolio_our_portfolio_1_colums.html" class="button-lg f-uppercase b-default-top-indent">view our works</a>
+                    <img data-retina class="j-data-element b-section-visual_1 hidden-xs" data-animate="fadeInRight" src="img/animation-data/mac-book_2.png" alt=""/>
+                </div>
+            </div>
+        </div>
+        <div class="b-infoblock"></div>
+    </section>
+
+    <section class="b-infoblock b-diagonal-line-bg-light">
+        <div class="container">
+            <h3 class="f-primary-b f-title-big">our main services</h3>
+            <p class="f-primary-l">Etiam consectetur pellentesque justo. Sed tristique bibendum elit non molestie. Donec et libero rutrum</p>
+            <div class="b-infoblock-with-icon-group row">
+                @@include('../shared/big_icons_list.html')
+            </div>
+        </div>
+    </section>
+
+    <section class="b-infoblock--small">
+        <div class="container">
+            <div class="row b-col-default-indent">
+                <div class="col-md-6">
+                    <h3 class="f-primary-b f-title-big">our technologies</h3>
+                    <p class="f-primary-l">Quisque at tortor a libero posuere laoreet vitae sed arcu nunc at augue tincidunt </p>
+                    <div class="b-shortcode-example">
+                        @@include('../shared/progressbar/progressbar_small_group.html')
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <h3 class="f-primary-b f-title-big">our works</h3>
+                    <p class="f-primary-l">Quisque at tortor a libero posuere laoreet vitae sed arcu nunc at augue tincidunt </p>
+                    <div class="b-slidercontainer b-small-arr f-small-arr b-shadow-container b-default-top-indent">
+                        <div class="b-slider j-smallslider" data-height="282">
+                            <ul>
+                                <li data-transition="3dcurtain-vertical" data-slotamount="12">
+                                    <img data-retina src="img/slider/slider_small_2.png">
+                                </li>
+                                <li data-transition="3dcurtain-vertical" data-slotamount="12">
+                                    <img data-retina src="img/slider/slider_small_1.jpg">
+                                </li>
+                                <li data-transition="" data-slotamount="12">
+                                    <img data-retina src="img/slider/slider-education.jpg">
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="b-infoblock b-diagonal-line-bg-light b-bg-full-primary">
+        @@include('../shared/our_big_clients2.html')
+    </section>
+
+</div>
+
+
+
+@@include('../templates/footer.html')
+</body>
+</html>

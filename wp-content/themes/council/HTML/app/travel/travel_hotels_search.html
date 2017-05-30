@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Travel: Hotels Search | Frexy Responsive HTML Template</title>
+    @@include('../templates/header-links.html')
+</head>
+<body>
+    @@include('../templates/header.html')
+    <div class="l-main-container">
+        <section class="b-infoblock--without-padding">
+            <div class="b-google-map map-theme b-google-map__estate-map">
+                @@include('../shared/google_map.html', {
+                "marker": "img/google-map-marker_home-default.png",
+                "label-marker": "",
+                "selected-marker": 4,
+                "info-window-width": 292,
+                "info-window-inner": "icons_metres",
+                "info-window": "info_window_estate"
+                })
+            </div>
+        </section>
+        <section class="b-full-search">
+            <div class="container">
+                <div class="b-full-search-form">
+                    <form action="" method="get">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 b-full-search-form_col">
+                            <div class="b-full-search-form_title f-full-search-form_title f-primary-b">What?</div>
+                            <div class="row">
+                                <div class="col-sm-6 col-xs-6 b-full-search-form_check">
+                                    <label for="radio_off">
+                                        <input type="radio" class="b-form-radio" name="radio" id="radio_off">
+                                        <span class="f-full-search-form_label f-primary-b">Tours</span>
+                                    </label>
+                                </div>
+                                <div class="col-sm-6 col-xs-6 b-full-search-form_check">
+                                    <label for="hotels">
+                                        <input type="radio" class="b-form-radio" name="radio" id="hotels">
+                                        <span class="f-full-search-form_label f-primary-b">Hotels</span>
+                                    </label>
+                                </div>
+                                <div class="visible-md"></div>
+                                <div class="col-sm-6 col-xs-6 b-full-search-form_check">
+                                    <label for="car">
+                                        <input type="radio" class="b-form-radio" name="radio" id="car">
+                                        <span class="f-full-search-form_label f-primary-b">Rent a car</span>
+                                    </label>
+                                </div>
+                                <div class="col-sm-6 col-xs-6 b-full-search-form_check">
+                                    <label for="self_cat">
+                                        <input type="radio" class="b-form-radio" name="radio" id="self_cat">
+                                        <span class="f-full-search-form_label f-primary-b">Self Catering</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 b-full-search-form_col">
+                            <div class="b-full-search-form_title f-full-search-form_title f-primary-b">Where?</div>
+                            <div class="b-full-search-form_label f-full-search-form_label f-primary-b">Your destination</div>
+                            <input type="text" class="form-control" placeholder="city, region, district...">
+                        </div>
+                        <div class="clearfix visible-md visible-sm"></div>
+                        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 b-full-search-form_col">
+                            <div class="b-full-search-form_title f-full-search-form_title f-primary-b">When?</div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="b-full-search-form_label f-full-search-form_label f-primary-b">Check-in date</div>
+                                    <div class="b-form-row b-form-control__icon-wrap">
+                                        <input type="text" class="form-control datepicker datepicker" id="dp14">
+                                        <i class="fa fa-calendar b-form-control__icon f-form-control__icon"></i>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="b-full-search-form_label f-full-search-form_label f-primary-b">Check-out date</div>
+                                    <div class="b-form-row b-form-control__icon-wrap">
+                                        <input type="text" class="form-control datepicker datepicker" id="dp21">
+                                        <i class="fa fa-calendar b-form-control__icon f-form-control__icon"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 b-full-search-form_col">
+                            <div class="b-full-search-form_title f-full-search-form_title f-primary-b">Who?</div>
+                            <div class="b-full-search-form_label f-full-search-form_label f-primary-b">Room</div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <input type="number" min="1" class="form-control form-control--secondary j-product-count" value="1">
+                                </div>
+                                <div class="col-md-6">
+                                    <button class="b-search-map__submit b-btn f-btn b-btn-light f-btn-light f-primary-b f-left"><i class="fa fa-search"></i> search</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </form>
+                </div>
+                <div class="b-search-title f-search-title f-primary-b">Have 14 results found</div>
+            </div>
+        </section>
+        <section class="b-infoblock b-null-top-indent">
+            <div class="container">
+                <div class="row b-col-default-indent f-some-examples f-some-examples-quaternary ">
+                    <div class="col-md-4 col-sm-6">
+                        @@include('../shared/hotels_block.html', {"title": "Tropicana hotel", "image": "img/travel/travel_1.jpg", "button": "Book now", "middle_block": "stars_reviews", "href": "travel_hotels_details_left_slidebar.html"})
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        @@include('../shared/hotels_block.html', {"title": "Mabely Grand Hotel", "image": "img/travel/travel_2.jpg", "button": "Book now", "middle_block": "stars_reviews", "href": "travel_hotels_details_left_slidebar.html"})
+                    </div>
+                    <div class="clearfix visible-sm-block"></div>
+                    <div class="col-md-4 col-sm-6">
+                        @@include('../shared/hotels_block.html', {"title": "Roosevelt hotel", "image": "img/travel/travel_3.jpg", "button": "Book now", "middle_block": "stars_reviews", "href": "travel_hotels_details_left_slidebar.html"})
+                    </div>
+                    <div class="clearfix visible-md visible-lg"></div>
+                    <div class="col-md-4 col-sm-6">
+                        @@include('../shared/hotels_block.html', {"title": "Tropicana hotel", "image": "img/travel/travel_1.jpg", "button": "Book now", "middle_block": "stars_reviews", "href": "travel_hotels_details_left_slidebar.html"})
+                    </div>
+                    <div class="clearfix visible-sm-block"></div>
+                    <div class="col-md-4 col-sm-6">
+                        @@include('../shared/hotels_block.html', {"title": "Mabely Grand Hotel", "image": "img/travel/travel_2.jpg", "button": "Book now", "middle_block": "stars_reviews", "href": "travel_hotels_details_left_slidebar.html"})
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        @@include('../shared/hotels_block.html', {"title": "Roosevelt hotel", "image": "img/travel/travel_3.jpg", "button": "Book now", "middle_block": "stars_reviews", "href": "travel_hotels_details_left_slidebar.html"})
+                    </div>
+                    <div class="clearfix visible-sm visible-md visible-lg"></div>
+                    <div class="col-md-4 col-sm-6">
+                        @@include('../shared/hotels_block.html', {"title": "Tropicana hotel", "image": "img/travel/travel_1.jpg", "button": "Book now", "middle_block": "stars_reviews", "href": "travel_hotels_details_left_slidebar.html"})
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        @@include('../shared/hotels_block.html', {"title": "Mabely Grand Hotel", "image": "img/travel/travel_2.jpg", "button": "Book now", "middle_block": "stars_reviews", "href": "travel_hotels_details_left_slidebar.html"})
+                    </div>
+                    <div class="clearfix visible-sm-block"></div>
+                    <div class="col-md-4 col-sm-6">
+                        @@include('../shared/hotels_block.html', {"title": "Roosevelt hotel", "image": "img/travel/travel_3.jpg", "button": "Book now", "middle_block": "stars_reviews", "href": "travel_hotels_details_left_slidebar.html"})
+                    </div>
+                    <div class="clearfix visible-sm visible-md visible-lg"></div>
+                 </div>
+                <div class="b-shortcode-example b-null-bottom-indent">
+                    @@include('../shared/paging.html')
+                </div>
+            </div>
+        </section>
+
+    </div>
+    @@include('../templates/footer.html')
+</body>
+</html>

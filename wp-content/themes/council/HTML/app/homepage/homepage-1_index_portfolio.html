@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Home v6: Portfolio Style | Frexy Responsive HTML Template</title>
+    @@include('../templates/header-links.html')
+</head>
+<body>
+@@include('../templates/header.html')
+
+<div class="l-main-container">
+
+    <div class="b-slidercontainer b-slider b-slider--thumb">
+        <div class="j-fullscreenslider j-arr-nexttobullets">
+            <ul>
+                <li data-transition="slotfade-vertical" data-slotamount="7" >
+                    <div class="tp-bannertimer"></div>
+                    <img data-retina src="img/slider/section-bg-2.jpg">
+                    <div class="caption lft caption-left"  data-x="left" data-y="150" data-hoffset="60" data-speed="700" data-start="2000">
+                        <div class="b-slider-lg-info-l__item-title f-slider-lg-info-l__item-title b-slider-lg-info-l__item-title-tertiary">
+                            <h2 class="f-primary-l">frexy psd template</h2>
+                            <h1 class="f-primary-b">portfolio homepage version</h1>
+                        </div>
+                    </div>
+                    <div class="caption lfl caption-left"  data-x="left" data-y="270" data-speed="1000" data-start="2600">
+                        <div class="b-slider-lg-info-l__item-link f-slider-lg-info-l__item-link">
+                            <a href="#" class="b-slider-lg-info-l__item-anchor f-slider-lg-info-l__item-anchor f-primary-b">multi-purposes psd template</a>
+                            <span class="b-slider-lg-info-l__item-link-after"><i class="fa fa-chevron-right"></i></span>
+                        </div>
+                    </div>
+                </li>
+                <li data-transition="slotfade-vertical" data-slotamount="7" >
+                    <div class="tp-bannertimer"></div>
+                    <img data-retina src="img/slider/section-bg-4.jpg">
+                    <div class="caption lft caption-left"  data-x="left" data-y="150" data-hoffset="60" data-speed="700" data-start="2000">
+                        <div class="b-slider-lg-info-l__item-title f-slider-lg-info-l__item-title b-slider-lg-info-l__item-title-tertiary b-bg-slider-lg-info-l__item-title">
+                            <h2 class="f-primary-l">frexy psd</h2>
+                            <h1 class="f-primary-b">travel version</h1>
+                        </div>
+                    </div>
+                    <div class="caption lfl caption-left"  data-x="left" data-y="270" data-speed="1000" data-start="2600">
+                        <div class="b-slider-lg-info-l__item-link f-slider-lg-info-l__item-link">
+                            <a href="#" class="b-slider-lg-info-l__item-anchor f-slider-lg-info-l__item-anchor f-primary-b">multi-purposes psd template</a>
+                            <span class="b-slider-lg-info-l__item-link-after"><i class="fa fa-chevron-right"></i></span>
+                        </div>
+                    </div>
+                </li>
+                <li data-transition="slotfade-vertical" data-slotamount="7" >
+                    <div class="tp-bannertimer"></div>
+                    <img data-retina src="img/slider/slider-education.jpg">
+                    <div class="caption lft caption-left"  data-x="left" data-y="150" data-hoffset="60" data-speed="700" data-start="2000">
+                        <div class="b-slider-lg-info-l__item-title f-slider-lg-info-l__item-title b-slider-lg-info-l__item-title-tertiary b-bg-slider-lg-info-l__item-title">
+                            <h2 class="f-primary-l">frexy psd</h2>
+                            <h1 class="f-primary-b">travel version</h1>
+                        </div>
+                    </div>
+                    <div class="caption lfl caption-left"  data-x="left" data-y="270" data-speed="1000" data-start="2600">
+                        <div class="b-slider-lg-info-l__item-link f-slider-lg-info-l__item-link">
+                            <a href="#" class="b-slider-lg-info-l__item-anchor f-slider-lg-info-l__item-anchor f-primary-b">multi-purposes psd template</a>
+                            <span class="b-slider-lg-info-l__item-link-after"><i class="fa fa-chevron-right"></i></span>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="b-category-filter b-diagonal-line-bg-light f-category-filter f-center j-filter">
+        <ul>
+            <li class="is-category-filter-active"><a data-filter="all" href="#">All</a></li>
+            <li><a data-filter=".j-filter-graphic" href="#">3D Graphic</a></li>
+            <li><a data-filter=".j-filter-illustration" href="#">Illustrations</a></li>
+            <li><a data-filter=".j-filter-web" href="#">Web Design</a></li>
+            <li><a data-filter=".j-filter-mob" href="#">Mobile Design</a></li>
+            <li><a data-filter=".j-filter-brand" href="#">Branding Design</a></li>
+        </ul>
+    </div>
+    <hr class="b-hr-light b-null-top-indent b-null-bottom-indent"/>
+    <section class="b-portfolio b-infoblock f-center j-filter-content">
+        <div class="b-portfolio__content container">
+            <div class="row j-masonry b-col-default-indent">
+               <div class="masonry-gridSizer col-md-3 col-sm-6 col-xs-12"></div>
+               <div class="j-masonry-item j-filter-graphic j-filter-illustration j-filter-brand col-md-3 col-sm-6 col-xs-12 ">
+                    <div class="">
+                        @@include('../shared/hover_image/hover_image_portfolio.html', {"src": "img/homepage/portfolio/portfolio-2.jpg", "big": "img/homepage/portfolio/big/portfolio-2.jpg", "href": "portfolio_our_portfolio_detail.html"})
+                    </div>
+               </div>
+               <div class="j-masonry-item j-filter-graphic j-filter-illustration j-filter-brand col-md-3 col-sm-6 col-xs-12 ">
+                    <div class="">
+                        @@include('../shared/hover_image/hover_video_portfolio.html', {
+                        "src": "img/portfolio/video-pic.jpg",
+                        "big": "img/portfolio/portfolio/big/video-pic.jpg",
+                        "href": "portfolio_our_portfolio_detail.html",
+                        "full": "http://player.vimeo.com/video/48511895"
+                        })
+                    </div>
+               </div>
+               <div class="j-masonry-item j-filter-illustration col-md-3 col-sm-6 col-xs-12 ">
+                    <div class="">
+                    @@include('../shared/hover_image/hover_image_portfolio.html', {"src": "img/homepage/portfolio/portfolio-3.jpg", "big": "img/homepage/portfolio/big/portfolio-3.jpg", "href": "portfolio_our_portfolio_detail.html"})
+                    </div>
+               </div>
+               <div class="j-masonry-item j-filter-mob col-md-3 col-sm-6 col-xs-12 ">
+                    <div class="">
+                    @@include('../shared/hover_image/hover_image_portfolio.html', {"src": "img/homepage/portfolio/portfolio-4.jpg", "big": "img/homepage/portfolio/big/portfolio-4.jpg", "href": "portfolio_our_portfolio_detail.html"})
+                    </div>
+               </div>
+               <div class="j-masonry-item j-filter-brand j-filter-graphic col-md-3 col-sm-6 col-xs-12 ">
+                    <div class="">
+                    @@include('../shared/hover_image/hover_image_portfolio.html', {"src": "img/homepage/portfolio/portfolio-5.jpg", "big": "img/homepage/portfolio/big/portfolio-5.jpg", "href": "portfolio_our_portfolio_detail.html"})
+                    </div>
+                </div>
+                <div class="j-masonry-item j-filter-web col-md-3 col-sm-6 col-xs-12 ">
+                    <div class="">
+                    @@include('../shared/hover_image/hover_image_portfolio.html', {"src": "img/homepage/portfolio/portfolio-6.jpg", "big": "img/homepage/portfolio/big/portfolio-6.jpg", "href": "portfolio_our_portfolio_detail.html"})
+                    </div>
+                </div>
+                <div class="j-masonry-item j-filter-mob j-filter-brand j-filter-illustration col-md-3 col-sm-6 col-xs-12 ">
+                    <div class="">
+                        @@include('../shared/hover_image/hover_image_portfolio.html', {"src": "img/homepage/portfolio/portfolio-8.jpg", "big": "img/homepage/portfolio/big/portfolio-8.jpg", "href": "portfolio_our_portfolio_detail.html"})
+                    </div>
+                </div>
+                <div class="j-masonry-item j-filter-web j-filter-graphic j-filter-brand col-md-6 col-sm-6 col-xs-12 ">
+                    <div class="">
+                    @@include('../shared/hover_image/hover_image_portfolio.html', {"src": "img/homepage/portfolio/portfolio-7.jpg", "big": "img/homepage/portfolio/big/portfolio-7.jpg", "href": "portfolio_our_portfolio_detail.html"})
+                    </div>
+                </div>
+                <div class="j-masonry-item j-filter-web j-filter-brand col-md-3 col-sm-6 col-xs-12 ">
+                    <div class="">
+                    @@include('../shared/hover_image/hover_image_portfolio.html', {"src": "img/homepage/portfolio/portfolio-8.jpg", "big": "img/homepage/portfolio/big/portfolio-8.jpg", "href": "portfolio_our_portfolio_detail.html"})
+                    </div>
+                </div>
+                <div class="j-masonry-item j-filter-mob j-filter-brand j-filter-illustration col-md-3 col-sm-6 col-xs-12 ">
+                    <div class="">
+                    @@include('../shared/hover_image/hover_image_portfolio.html', {"src": "img/homepage/portfolio/portfolio-9.jpg", "big": "img/homepage/portfolio/big/portfolio-9.jpg", "href": "portfolio_our_portfolio_detail.html"})
+                    </div>
+                </div>
+                <div class="j-masonry-item j-filter-graphic j-filter-illustration j-filter-brand col-md-3 col-sm-6 col-xs-12 ">
+                    <div class="">
+                        @@include('../shared/hover_image/hover_video_portfolio.html', {
+                        "src": "img/portfolio/video-pic-2.jpg",
+                        "href": "portfolio_our_portfolio_detail.html",
+                        "full": "http://player.vimeo.com/video/87929845"
+                        })
+                    </div>
+                </div>
+                <div class="j-masonry-item j-filter-mob j-filter-brand j-filter-illustration col-md-3 col-sm-6 col-xs-12 ">
+                    <div class="">
+                    @@include('../shared/hover_image/hover_image_portfolio.html', {"src": "img/homepage/portfolio/portfolio-3.jpg", "big": "img/homepage/portfolio/big/portfolio-3.jpg", "href": "portfolio_our_portfolio_detail.html"})
+                    </div>
+                </div>
+            </div>
+            <div class="b-btn b-btn-biggest f-btn-biggest f-primary-b b-default-top-indent">LOAD MORE</div>
+        </div>
+
+    </section>
+
+    <section class="b-infoblock b-diagonal-line-bg-light">
+        @@include('../shared/our_big_clients.html')
+    </section>
+
+    <div class="b-info-container f-info-container">
+        <div class="container">
+            <div class="b-info-container__title f-info-container__title">
+                <i class="fa fa-twitter"></i><br/>
+                <span class="f-b f-primary-b">frexystudio</span>
+            </div>
+            <p class="b-info-container__text f-info-container__text f-primary-l-it">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In accumsan porttitor egestas. Suspendisse gravida ultrices convallis.<br/>  Interdum et malesuada fames <a href="http://bly.shotlinks.com">http://bly.shotlinks.com</a></p>
+        </div>
+    </div>
+</div>
+
+
+
+@@include('../templates/footer.html')
+</body>
+</html>

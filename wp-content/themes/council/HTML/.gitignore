@@ -1,0 +1,12 @@
+#phpstorm project files
+.idea
+
+# sass cache files
+*.sass-cache
+
+# grunt generated files
+/html/*.html
+/html/css/*
+!/html/css/custom.css
+/html/js/min/*.js
+/node_modules/

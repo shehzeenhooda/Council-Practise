@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Portfolio: Two Columns v1 | Frexy Responsive HTML Template</title>
+    @@include('../templates/header-links.html')
+</head>
+<body>
+@@include('../templates/header.html')
+@@include('../templates/inner-header-description.html', {"title": "Our portfolio", "description": "Check our portfolio 3 columns layout sample"})
+
+<div class="l-main-container">
+    <div class="b-breadcrumbs f-breadcrumbs">
+        <div class="container">
+            <ul>
+                <li><a href="#"><i class="fa fa-home"></i>Home</a></li>
+                <li><i class="fa fa-angle-right"></i><a href="#"> Portfolio</a></li>
+                <li><i class="fa fa-angle-right"></i><span>Two Columns</span></li>
+                <li><i class="fa fa-angle-right"></i><span>Version1</span></li>
+            </ul>
+        </div>
+    </div>
+    <div class="container ">
+        <div class="l-inner-page-container">
+            <div class="row">
+                <div class="col-md-12">
+                    @@include('../shared/portfolio/portfolio_content_2column.html')
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+@@include('../templates/footer.html')
+
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Blog: Timeline Full width | Frexy Responsive HTML Template</title>
+    @@include('../templates/header-links.html')
+</head>
+<body>
+@@include('../templates/header.html')
+@@include('../templates/inner-header.html', {"title": "Our blog Timeline Full width"})
+<div class="l-main-container">
+
+    <div class="b-breadcrumbs f-breadcrumbs">
+        <div class="container">
+            <ul>
+                <li><a href=""><i class="fa fa-home"></i>Home</a></li>
+                <li><i class="fa fa-angle-right"></i><a href="">Blog</a></li>
+                <li><i class="fa fa-angle-right"></i><span>Timeline Full width</span></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="l-inner-page-container">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="b-timeline">
+                        @@include('../shared/blog/timeline/blog-timeline.html', {
+                            "src": "img/blog/blog_listing.jpg",
+                            "title": "Semper at egestas sed, elementum",
+                            "date": "20 feb",
+                            "icon": "fa-pencil",
+                            "link": "blog_detail_left_slidebar.html"
+                        })
+                        @@include('../shared/blog/timeline/blog-timeline.html', {
+                            "src": "img/blog/timeline/blog_timeline_full_width_02.jpg",
+                            "title": "Etiam eros massa, dictum id massa sit amet placerat",
+                            "date": "24 feb",
+                            "icon": "fa-camera",
+                            "link": "blog_detail_left_slidebar.html"
+                        })
+                        @@include('../shared/blog/timeline/blog-timeline-video.html', {
+                            "src": "http://player.vimeo.com/video/62542478?title=0&byline=0&portrait=0&badge=0",
+                            "title": "Semper at egestas sed, elementum",
+                            "date": "30 feb",
+                            "icon": "fa-video-camera"
+                        })
+                        @@include('../shared/blog/timeline/blog-timeline-music.html', {
+                            "src": "img/blog/blog_listing.jpg",
+                            "title": "Semper at egestas sed, elementum",
+                            "date": "2 mar",
+                            "icon": "fa-music"
+                        })
+                        @@include('../shared/blog/timeline/blog-timeline.html', {
+                            "src": "img/blog/timeline/blog_timeline_full_width_05.jpg",
+                            "title": "Etiam eros massa, dictum id massa sit amet placerat",
+                            "date": "5 mar",
+                            "icon": "fa-video-camera",
+                            "link": "blog_detail_left_slidebar.html"
+                        })
+                        @@include('../shared/blog/timeline/blog-timeline.html', {
+                            "src": "img/blog/timeline/blog_timeline_full_width_06.jpg",
+                            "title": "Etiam eros massa, dictum id massa sit amet placerat",
+                            "date": "9 mar",
+                            "icon": "fa-camera",
+                            "link": "blog_detail_left_slidebar.html"
+                        })
+                        @@include('../shared/blog/timeline/blog-timeline-music.html', {
+                            "src": "img/blog/blog_listing.jpg",
+                            "title": "Semper at egestas sed, elementum",
+                            "date": "12 mar",
+                            "icon": "fa-music"
+                        })
+                        @@include('../shared/blog/timeline/blog-timeline-finish.html', {
+                            "message": "Load more",
+                            "icon": "fa-angle-double-right"
+                        })
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@@include('../templates/footer.html')
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Coming soon v1 | Frexy Responsive HTML Template</title>
+    @@include('../templates/header-links.html')
+</head>
+<body>
+<div class="b-top-logo-block f-center">
+    <div class="b-top-logo-block-inner">
+        <img class="color-theme" src="img/logo-md-default.png" alt=""/>
+
+        <p class="f-top-logo-block_title f-primary-b">frexy psd</p>
+    </div>
+</div>
+<div class="l-main-container">
+    <div class="b-lg-container b-bg-dark-lg f-lg-container--dark-bg">
+        <div class="container f-center">
+            <div class="row">
+                <div class="col-md-offset-2 col-md-8">
+                    <div class="b-lg-container-title f-lg-container-title f-primary-eb">we are coming soon</div>
+                    <p class="b-lg-container-description f-lg-container-description">We are working hard and estimated
+                        release time products below.<br/>
+                        Sed ac tristique nunc, ut gravida nunc. Nulla consequat erat non lectus imperdiet.</p>
+                    <div class="clocks">
+                        <span id="clock"></span>
+                    </div>
+                    <form action="" method="get">
+                        <div class="form-sign-up">
+                            <div class="form-sign-up-inner">
+                                <input type="text" placeholder="Enter your email">
+                                <button class="f-primary-b">sign up</button>
+                            </div>
+                        </div>
+                        <div class="form-sign-up-hint f-primary-b">
+                            Sign up Now to get early notification of our news
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<footer>
+    @@include('../templates/footer-primary.html')
+</footer>
+@@include('../templates/footer-links.html')
+<script src="js/countdown/jquery.countdown.js"></script>
+<script type="text/javascript">
+    $('#clock').countdown('2014/12/31').on('update.countdown', function (event) {
+        var $this = $(this).html(event.strftime(''
+            + '<span class="wrap"><span class="time">%D</span> <span class="text">day%!D</span></span>'
+            + '<span class="wrap"><span class="time">%H</span> <span class="text">hour%!H</span></span>'
+            + '<span class="wrap"><span class="time">%M</span> <span class="text">min%!M</span></span>'
+            + '<span class="wrap"><span class="time">%S</span> <span class="text">sec%!S</span></span>'
+        ));
+    });
+</script>
+</body>
+</html>

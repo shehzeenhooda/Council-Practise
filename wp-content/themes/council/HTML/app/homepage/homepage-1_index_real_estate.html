@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Home v11: Frontpage Real Estate | Frexy Responsive HTML Template</title>
+  @@include('../templates/header-links.html')
+</head>
+<body>
+  @@include('../templates/header.html')
+
+<div class="l-main-container">
+    <section class="b-infoblock--without-padding b-float-search">
+        <div class="b-google-map map-theme b-google-map__estate-map">
+            @@include('../shared/google_map.html', {
+                "marker": "img/google-map-marker_home-default.png",
+                "label-marker": "",
+                "selected-marker": 4,
+                "info-window-width": 292,
+                "info-window-inner": "icons_metres",
+                "info-window": "info_window_estate"
+            })
+        </div>
+        <div class="b-float-search__container">
+            <div class="b-float-search__container-inner">
+                <div class="b-float-search__container-inner-row b-right-inner-addon f-right-inner-addon">
+                    <i class="fa fa-search b-right-inner-addon-search"></i>
+                    <input type="search" class="form-control b-float-search__input" placeholder="ENTER YOUR KEYWORDS" />
+                </div>
+                <div class="b-float-search__container-inner-row f-float-search__form_elements">
+                    <label for="advanced_search">
+                        <input type="checkbox" id="advanced_search" class="b-form-checkbox" />
+                        <span class="f-primary-b">Choose advance search</span>
+                    </label>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="b-infoblock">
+        <div class="container">
+            <div class="b-infoblock-with-icon-group row b-infoblock-with-icon--dialog-r">
+                @@include('../shared/big_icons_list.html')
+            </div>
+        </div>
+    </section>
+    <section class="b-infoblock b-diagonal-line-bg-light">
+        <div class="container">
+            <div class="b-carousel-secondary f-carousel-secondary b-carousel-reset">
+                <div class="b-carousel-title f-carousel-title f-primary-b">popular hotels</div>
+                <div class="b-some-examples f-some-examples f-some-examples-quaternary j-carousel-secondary">
+                    @@include('../shared/apartment_block.html', {"image": "img/homepage/travel_img1.jpg", "button": "view detail", "middle_block": "icons_metres"})
+                    @@include('../shared/apartment_block.html', {"image": "img/homepage/travel_img2.jpg", "button": "view detail", "middle_block": "icons_metres"})
+                    @@include('../shared/apartment_block.html', {"image": "img/homepage/travel_img3.jpg", "button": "view detail", "middle_block": "icons_metres"})
+                    @@include('../shared/apartment_block.html', {"image": "img/homepage/travel_img1.jpg", "button": "view detail", "middle_block": "icons_metres"})
+                    @@include('../shared/apartment_block.html', {"image": "img/homepage/travel_img2.jpg", "button": "view detail", "middle_block": "icons_metres"})
+                    @@include('../shared/apartment_block.html', {"image": "img/homepage/travel_img3.jpg", "button": "view detail", "middle_block": "icons_metres"})
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="b-bg-girl-2 b-infoblock b-benefits-container f-benefits-container">
+        <div class="container f-center">
+            <p class="f-primary-b b-benefits_description f-benefits_description">we're frexy studio</p>
+            <h2 class="f-primary-l f-benefits_title">meet our professional agents</h2>
+            <div class="row">
+                <div class="col-md-4 col-sm-4 col-xs-12">
+                    @@include('../shared/hover_image/hover_image_real_estate.html', {"src": "img/users/user_lg_1.png"})
+                    <div class="b-benefits__item_title f-benefits__item_title f-primary-b">michael smith</div>
+                    <div class="b-benefits__item_title f-benefits__item_title f-primary-l">cor & founder</div>
+                    <div class="b-benefits__item_title b-benefits__item_description f-benefits__item_description">Phasellus enim libero, blandit vel sapien vitae, condimentum ultricies magna etuismod orci ut </div>
+                    <button class="button-xs text-uppercase">profile</button>
+                </div>
+                <div class="col-md-4 col-sm-4 col-xs-12">
+                    @@include('../shared/hover_image/hover_image_real_estate.html', {"src": "img/users/user_lg_2.png"})
+                    <div class="b-benefits__item_title f-benefits__item_title f-primary-b">kate smith</div>
+                    <div class="b-benefits__item_title f-benefits__item_title f-primary-l">marketing manager</div>
+                    <div class="b-benefits__item_title b-benefits__item_description f-benefits__item_description">Phasellus enim libero, blandit vel sapien vitae, condimentum ultricies magna etuismod orci ut </div>
+                    <button class="button-xs text-uppercase">profile</button>
+                </div>
+                <div class="col-md-4 col-sm-4 col-xs-12">
+                    @@include('../shared/hover_image/hover_image_real_estate.html', {"src": "img/users/user_lg_3.png"})
+                    <div class="b-benefits__item_title f-benefits__item_title f-primary-b">robert smith</div>
+                    <div class="b-benefits__item_title f-benefits__item_title f-primary-l">graphic designer</div>
+                    <div class="b-benefits__item_title b-benefits__item_description f-benefits__item_description">Phasellus enim libero, blandit vel sapien vitae, condimentum ultricies magna etuismod orci ut </div>
+                    <button class="button-xs text-uppercase">profile</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="b-infoblock b-diagonal-line-bg-light">
+        <div class="container">
+            <div class="b-carousel-secondary f-carousel-secondary b-carousel-reset">
+                <div class="b-carousel-title f-carousel-title f-primary-b">popular hotels</div>
+                <div class="b-some-examples f-some-examples f-some-examples-quaternary j-carousel-secondary">
+                    @@include('../shared/apartment_block.html', {"image": "img/homepage/travel_img4.jpg", "button": "view detail", "middle_block": "icons_metres"})
+                    @@include('../shared/apartment_block.html', {"image": "img/homepage/travel_img5.jpg", "button": "view detail", "middle_block": "icons_metres"})
+                    @@include('../shared/apartment_block.html', {"image": "img/homepage/travel_img6.jpg", "button": "view detail", "middle_block": "icons_metres"})
+                    @@include('../shared/apartment_block.html', {"image": "img/homepage/travel_img4.jpg", "button": "view detail", "middle_block": "icons_metres"})
+                    @@include('../shared/apartment_block.html', {"image": "img/homepage/travel_img5.jpg", "button": "view detail", "middle_block": "icons_metres"})
+                    @@include('../shared/apartment_block.html', {"image": "img/homepage/travel_img6.jpg", "button": "view detail", "middle_block": "icons_metres"})
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="b-infoblock">
+        @@include('../shared/our_big_clients.html')
+    </section>
+</div>
+
+  @@include('../templates/footer.html')
+</body>
+</html>

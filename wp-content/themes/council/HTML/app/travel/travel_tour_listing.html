@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Travel: Tour Listing | Frexy Responsive HTML Template</title>
+    @@include('../templates/header-links.html')
+</head>
+<body>
+    @@include('../templates/header.html')
+    @@include('../templates/inner-header-description.html', {"title": "Our tours", "description": "Tour listing"})
+    <div class="l-main-container">
+
+        <div class="b-breadcrumbs f-breadcrumbs">
+            <div class="container">
+                <ul>
+                    <li><a href="#"><i class="fa fa-home"></i>Home</a></li>
+                    <li><i class="fa fa-angle-right"></i><a href="#"> Travel</a></li>
+                    <li><i class="fa fa-angle-right"></i><span> Tour listing</span></li>
+                </ul>
+            </div>
+        </div>
+
+        <section class="b-infoblock--small">
+            <div class="container">
+                <div class="row b-col-default-indent f-some-examples b-some-examples-tertiary f-some-examples-quaternary ">
+                    <div class="col-md-4 col-sm-6">
+                        @@include('../shared/hotels_block.html', {"title": "Bagan with hot air balloon", "image": "img/travel/travel_4.jpg", "button": "Book now", "middle_block": "stars", "href": "travel_tours_details_left_slidebar.html"})
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        @@include('../shared/hotels_block.html', {"title": "Hawaii Life Style", "image": "img/travel/travel_5.jpg", "button": "Book now", "middle_block": "stars", "href": "travel_tours_details_left_slidebar.html"})
+                    </div>
+                    <div class="clearfix visible-sm-block"></div>
+                    <div class="col-md-4 col-sm-6">
+                        @@include('../shared/hotels_block.html', {"title": "Seattle, LA, Vegas", "image": "img/travel/travel_6.jpg", "button": "Book now", "middle_block": "stars", "href": "travel_tours_details_left_slidebar.html"})
+                    </div>
+                    <div class="clearfix visible-md visible-lg"></div>
+                    <div class="col-md-4 col-sm-6">
+                        @@include('../shared/hotels_block.html', {"title": "Bagan with hot air balloon", "image": "img/travel/travel_4.jpg", "button": "Book now", "middle_block": "stars", "href": "travel_tours_details_left_slidebar.html"})
+                    </div>
+                    <div class="clearfix visible-sm-block"></div>
+                    <div class="col-md-4 col-sm-6">
+                        @@include('../shared/hotels_block.html', {"title": "Hawaii Life Style", "image": "img/travel/travel_5.jpg", "button": "Book now", "middle_block": "stars", "href": "travel_tours_details_left_slidebar.html"})
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        @@include('../shared/hotels_block.html', {"title": "Seattle, LA, Vegas", "image": "img/travel/travel_6.jpg", "button": "Book now", "middle_block": "stars", "href": "travel_tours_details_left_slidebar.html"})
+                    </div>
+                    <div class="clearfix visible-sm visible-md visible-lg"></div>
+                    <div class="col-md-4 col-sm-6">
+                        @@include('../shared/hotels_block.html', {"title": "Bagan with hot air balloon", "image": "img/travel/travel_4.jpg", "button": "Book now", "middle_block": "stars", "href": "travel_tours_details_left_slidebar.html"})
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        @@include('../shared/hotels_block.html', {"title": "Hawaii Life Style", "image": "img/travel/travel_5.jpg", "button": "Book now", "middle_block": "stars", "href": "travel_tours_details_left_slidebar.html"})
+                    </div>
+                    <div class="clearfix visible-sm-block"></div>
+                    <div class="col-md-4 col-sm-6">
+                        @@include('../shared/hotels_block.html', {"title": "Seattle, LA, Vegas", "image": "img/travel/travel_6.jpg", "button": "Book now", "middle_block": "stars", "href": "travel_tours_details_left_slidebar.html"})
+                    </div>
+                    <div class="clearfix visible-md visible-lg"></div>
+                    <div class="col-md-4 col-sm-6">
+                        @@include('../shared/hotels_block.html', {"title": "Bagan with hot air balloon", "image": "img/travel/travel_4.jpg", "button": "Book now", "middle_block": "stars", "href": "travel_tours_details_left_slidebar.html"})
+                    </div>
+                    <div class="clearfix visible-sm-block"></div>
+                    <div class="col-md-4 col-sm-6">
+                        @@include('../shared/hotels_block.html', {"title": "Hawaii Life Style", "image": "img/travel/travel_5.jpg", "button": "Book now", "middle_block": "stars", "href": "travel_tours_details_left_slidebar.html"})
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        @@include('../shared/hotels_block.html', {"title": "Seattle, LA, Vegas", "image": "img/travel/travel_6.jpg", "button": "Book now", "middle_block": "stars", "href": "travel_tours_details_left_slidebar.html"})
+                    </div>
+                    <div class="clearfix visible-sm visible-md visible-lg"></div>
+                 </div>
+                <div class="b-shortcode-example b-null-bottom-indent">
+                    @@include('../shared/paging.html')
+                </div>
+            </div>
+        </section>
+
+    </div>
+    @@include('../templates/footer.html')
+</body>
+</html>

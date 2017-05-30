@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>About us: Meet our team | Frexy Responsive HTML Template</title>
+  @@include('../templates/header-links.html')
+</head>
+<body>
+    @@include('../templates/header.html')
+    @@include('../templates/inner-header.html', {"title": "Meet our team"})
+<div class="l-main-container">
+
+<div class="b-breadcrumbs f-breadcrumbs">
+    <div class="container">
+        <ul>
+            <li><a href="#"><i class="fa fa-home"></i>Home</a></li>
+            <li><i class="fa fa-angle-right"></i><a href="#">About us</a></li>
+            <li><i class="fa fa-angle-right"></i><span>Meet our team</span></li>
+        </ul>
+    </div>
+</div>
+<section class="b-infoblock--small b-diagonal-line-bg-light">
+    <div class="container">
+        <div class="row b-col-default-indent">
+            <div class="col-md-6">
+                @@include('../shared/about_us_connection.html')
+            </div>
+            <div class="col-md-6  b-null-bottom-indent-xs">
+                <h3 class="f-primary-b c-default">CHRISTIAN TELO</h3>
+                <p class="f-primary-l">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed porttitor ligula sit amet ante facilisis, id rutrum est varius. Quisque facilisis lorem vitae lacus volutpat porttitor condimentum vitae est. Mauris gravida quam dui, ac aliquet quam rhoncus et. Donec in mi eget libero aliquet bibendum. Praesent augue arcu, ornare ut tincidunt eu, mattis a libero.</p>
+                <div class="b-shortcode-example b-null-bottom-indent-xs">
+                    <div class="b-progressbar-sm-group">
+                        <div class="b-progressbar-label f-progressbar-label f-primary-b">Photoshop</div>
+                        <div class="progress progress-striped b-progressbar f-progressbar" data-progressbar="animate_pb">
+                            <div class="progress-bar" role="progressbar" data-transitiongoal="80"></div>
+                        </div>
+                        <div class="b-progressbar-label f-progressbar-label f-primary-b">Responsive Web Design</div>
+                        <div class="progress progress-striped b-progressbar f-progressbar" data-progressbar="animate_pb">
+                            <div class="progress-bar" role="progressbar" data-transitiongoal="85"></div>
+                        </div>
+                        <div class="b-progressbar-label f-progressbar-label f-primary-b">iOS Development</div>
+                        <div class="progress progress-striped b-progressbar f-progressbar" data-progressbar="animate_pb">
+                            <div class="progress-bar" role="progressbar" data-transitiongoal="85"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="b-infoblock">
+    <div class="container">
+        <h2 class="f-primary-b f-center">Meet our team work</h2>
+        <p class="f-center c-s-62 f-title-small">Vivamus ac ultrices diam, vitae accumsan tellus. Integer sollicitudin vulputate lacus, congue vulputate nisl eleifend in. </p>
+        <div class="b-shortcode-example">
+            @@include('../shared/our_team.html')
+        </div>
+        <div class="b-shortcode-example">
+            @@include('../shared/our_team2.html')
+        </div>
+        <div class="b-default-top-indent">
+            @@include('../shared/separators/load_more.html')
+        </div>
+    </div>
+</section>
+<section class="b-diagonal-line-bg-light">
+    <div class="container b-infoblock--without-border">
+        @@include('../shared/follow_block.html')
+    </div>
+</section>
+</div>
+  @@include('../templates/footer.html')
+</body>
+</html>

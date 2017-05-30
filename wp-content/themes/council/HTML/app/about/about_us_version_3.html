@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>About us: v3 | Frexy Responsive HTML Template</title>
+  @@include('../templates/header-links.html')
+</head>
+<body>
+    @@include('../templates/header.html')
+    @@include('../templates/inner-header.html', {"title": "About us"})
+<div class="l-main-container">
+
+<div class="b-breadcrumbs f-breadcrumbs">
+    <div class="container">
+        <ul>
+            <li><a href="#"><i class="fa fa-home"></i>Home</a></li>
+            <li><i class="fa fa-angle-right"></i><a href="#">About us</a></li>
+            <li><i class="fa fa-angle-right"></i><span>Version 3</span></li>
+        </ul>
+    </div>
+</div>
+<section class="b-infoblock b-diagonal-line-bg-light">
+    <div class="container">
+        <div class="">
+            <div class="b-slidercontainer b-small-arr f-small-arr b-shadow-container">
+                <div class="b-slider j-contentwidthslider j-pagination-hide" data-height="330">
+                    <ul>
+                        <li data-transition="3dcurtain-vertical" data-slotamount="12">
+                            <img data-retina src="img/slider/slider-education.jpg">
+                            <div class="caption lft"  data-x="85" data-y="100" data-hoffset="60" data-speed="700" data-start="2000">
+                                <div class="b-bg-slider-lg-info-l__item-title b-slider_text-indent c-white f-primary-b">
+                                    <div class=" f-title-big f-uppercase f-lineheight-small">welcome to our company</div>
+                                </div>
+                            </div>
+                            <div class="caption lfl"  data-x="85" data-y="160" data-speed="1000" data-start="2600">
+                                <div class="b-bg-slider-lg-info-l__item-title b-slider_text-indent  c-white f-primary-l ">
+                                    <div class="f-title-smallest f-lineheight-big">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed porttitor ligula sit amet ante facilisis, id rutrum est
+                                        <br/>varius. Quisque facilisis lorem vitae lacus volutpat porttitor condimentum vitae est.
+                                        <a class="c-white f-primary-b" href="about_us_meet_our_team_detail.html">Read more</a></div>
+                                </div>
+                            </div>
+                        </li>
+                        <li data-transition="" data-slotamount="12">
+                            <img data-retina src="img/slider/slide_content_width_1.png">
+                            <div class="caption lft"  data-x="85" data-y="100" data-hoffset="60" data-speed="700" data-start="2000">
+                                <div class="b-bg-slider-lg-info-l__item-title b-slider_text-indent c-white f-primary-b">
+                                    <div class=" f-title-big f-uppercase f-lineheight-small">welcome to our company</div>
+                                </div>
+                            </div>
+                            <div class="caption lfl"  data-x="85" data-y="160" data-speed="1000" data-start="2600">
+                                <div class="b-bg-slider-lg-info-l__item-title b-slider_text-indent  c-white f-primary-l ">
+                                    <div class="f-title-smallest f-lineheight-big">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed porttitor ligula sit amet ante facilisis, id rutrum est
+                                        <br/>varius. Quisque facilisis lorem vitae lacus volutpat porttitor condimentum vitae est.
+                                        <a class="c-white f-primary-b" href="about_us_meet_our_team_detail.html">Read more</a></div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="b-infoblock">
+    <div class="container">
+        <h3 class="f-primary-b">Meet our team</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed porttitor ligula sit amet ante facilisis, id rutrum est varius. Quisque facilisis lorem vitae lacus volutpat porttitor condimentum vitae est. Mauris gravida quam dui, ac aliquet quam rhoncus et. Donec in mi eget libero aliquet bibendum. </p>
+        <div class="b-shortcode-example">
+            @@include('../shared/our_team.html')
+        </div>
+    </div>
+</section>
+<section class="b-diagonal-line-bg-light b-bg-full-primary">
+    <div class="container b-infoblock--without-border b-infoblock--small">
+        <div class="row b-col-default-indent">
+            <div class="col-sm-6">
+                <h3 class="f-primary-b">Our skills</h3>
+                <p class="f-primary-l ">Quisque at tortor a libero posuere laoreet vitae sed arcu nunc at augue tincidunt</p>
+                <div class="b-shortcode-example">
+                    @@include('../shared/progressbar/progressbar_small_group.html')
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <h3 class="f-primary-b">our clients say</h3>
+                <p class="f-primary-l ">Quisque at tortor a libero posuere laoreet vitae sed arcu nunc at augue tincidunt</p>
+                @@include('../shared/mention_item.html')
+            </div>
+        </div>
+    </div>
+</section>
+<section class="b-google-map map-theme">
+    @@include('../shared/google_map.html', {
+    "marker": "img/google-map-marker-default.png",
+    "label-marker": "",
+    "selected-marker": 0,
+    "info-window-width": 526,
+    "info-window-inner": "",
+    "info-window": "info_window_address"
+    })
+    @@include('../shared/contact_form.html')
+</section>
+
+</div>
+
+  @@include('../templates/footer.html')
+</body>
+</html>

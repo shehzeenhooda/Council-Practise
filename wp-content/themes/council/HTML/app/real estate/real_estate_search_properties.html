@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Real Estate: Search Properties | Frexy Responsive HTML Template</title>
+    @@include('../templates/header-links.html')
+
+</head>
+<body>
+@@include('../templates/header.html')
+<div class="l-main-container">
+    <section class="b-infoblock--without-padding b-float-search">
+        <div class="b-google-map map-theme b-google-map__estate-map">
+            @@include('../shared/google_map.html', {
+            "marker": "img/google-map-marker_home-default.png",
+            "label-marker": "",
+            "selected-marker": 4,
+            "info-window-width": 292,
+            "info-window-inner": "icons_metres",
+            "info-window": "info_window_estate"
+            })
+        </div>
+        <section class="b-full-search">
+            <div class="container">
+                <div class="b-full-search-form b-form-properties">
+                    <form action="" method="get">
+                        <div class="row">
+                            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                                <div class="b-full-search-form_check">
+                                    <input type="text" class="form-control" placeholder="property id">
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="b-form-row b-form-select b-select--alt">
+                                            <select class="j-select">
+                                                <option>min bed</option>
+                                                <option selected="selected">min bed</option>
+                                                <option>min bed</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="b-form-row b-form-select b-select--alt">
+                                            <select class="j-select">
+                                                <option>min bad</option>
+                                                <option selected="selected">min bad</option>
+                                                <option>min bad</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                                <div class="b-form-row b-form-select b-select--alt">
+                                    <select class="j-select">
+                                        <option>property location</option>
+                                        <option selected="selected">property location</option>
+                                    </select>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="b-form-row b-form-select b-select--alt">
+                                            <select class="j-select">
+                                                <option>min price</option>
+                                                <option selected="selected">min price</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="b-form-row b-form-select b-select--alt">
+                                            <select class="j-select">
+                                                <option>max price</option>
+                                                <option selected="selected">max price</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="clearfix visible-md visible-sm"></div>
+                            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                                <div class="b-form-row b-form-select b-select--alt">
+                                    <select class="j-select">
+                                        <option>property status</option>
+                                        <option selected="selected">property status</option>
+                                    </select>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="b-full-search-form_check">
+                                            <input type="text" class="form-control" placeholder="Min Area (Sq Ft)">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="b-full-search-form_check">
+                                            <input type="text" class="form-control" placeholder="Max Area (Sq Ft)">
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                                <div class="b-form-row b-form-select b-select--alt">
+                                    <select class="j-select">
+                                        <option>property type</option>
+                                        <option selected="selected">property type</option>
+                                    </select>
+                                </div>
+                                <div class="b-form-row">
+                                    <button class="b-search-map__submit b-btn f-btn b-btn-light f-btn-light f-primary-b f-left"><i class="fa fa-search"></i> search properties</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="b-search-title f-search-title f-primary-b">Have 14 results found</div>
+            </div>
+        </section>
+    </section>
+    <div class="container">
+        <div class="l-inner-page-container">
+            <div class="row">
+                <div class="col-md-4 col-sm-6 col-xs-12 b-item-apartment-block">
+                    @@include('../shared/apartment_block_grid.html', {
+                    "image": "img/real_state/real_estate_home-1.jpg",
+                    "title": "Villa Ernesto Subdivision",
+                    "href": "real_estate_home_detail_right_sidebar.html"})
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12 b-item-apartment-block">
+                    @@include('../shared/apartment_block_grid.html', {
+                    "image": "img/real_state/real_estate_home-2.jpg",
+                    "title": "Precy Villa Condos",
+                    "href": "real_estate_home_detail_right_sidebar.html"})
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12 b-item-apartment-block">
+                    @@include('../shared/apartment_block_grid.html', {
+                    "image": "img/real_state/real_estate_home-3.jpg",
+                    "title": "Redgedale Palace",
+                    "href": "real_estate_home_detail_right_sidebar.html"})
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12 b-item-apartment-block">
+                    @@include('../shared/apartment_block_grid.html', {
+                    "image": "img/real_state/real_estate_home-4.jpg",
+                    "title": "Villa Ernesto Subdivision",
+                    "href": "real_estate_home_detail_right_sidebar.html"})
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12 b-item-apartment-block">
+                    @@include('../shared/apartment_block_grid.html', {
+                    "image": "img/real_state/real_estate_home-5.jpg",
+                    "title": "Precy Villa Condos",
+                    "href": "real_estate_home_detail_right_sidebar.html"})
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12 b-item-apartment-block">
+                    @@include('../shared/apartment_block_grid.html', {
+                    "image": "img/real_state/real_estate_home-6.jpg",
+                    "title": "Redgedale Palace",
+                    "href": "real_estate_home_detail_right_sidebar.html"})
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12 b-item-apartment-block">
+                    @@include('../shared/apartment_block_grid.html', {
+                    "image": "img/real_state/real_estate_home-7.jpg",
+                    "title": "Villa Ernesto Subdivision",
+                    "href": "real_estate_home_detail_right_sidebar.html"})
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12 b-item-apartment-block">
+                    @@include('../shared/apartment_block_grid.html', {
+                    "image": "img/real_state/real_estate_home-8.jpg",
+                    "title": "Precy Villa Condos",
+                    "href": "real_estate_home_detail_right_sidebar.html"})
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12 b-item-apartment-block">
+                    @@include('../shared/apartment_block_grid.html', {
+                    "image": "img/real_state/real_estate_home-9.jpg",
+                    "title": "Redgedale Palace",
+                    "href": "real_estate_home_detail_right_sidebar.html"})
+                </div>
+            </div>
+            <div class="f-center">
+                @@include('../shared/paging.html')
+            </div>
+        </div>
+    </div>
+</div>
+@@include('../templates/footer.html')
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Travel: Tour Listing Left Sidebar | Frexy Responsive HTML Template</title>
+    @@include('../templates/header-links.html')
+</head>
+<body>
+@@include('../templates/header.html')
+@@include('../templates/inner-header-description.html', {"title": "Tours Listing", "description": "Tours Listing Left Sidebar"})
+<div class="l-main-container">
+
+    <div class="b-breadcrumbs f-breadcrumbs">
+        <div class="container">
+            <ul>
+                <li><a href="#"><i class="fa fa-home"></i>Home</a></li>
+                <li><i class="fa fa-angle-right"></i><a href="#">Travel</a></li>
+                <li><i class="fa fa-angle-right"></i><span>Tours Listing Left Sidebar</span></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="l-inner-page-container">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9 col-md-push-3">
+                    @@include('../shared/travel/travel_slidebar_content.html', {
+                    "src": "img/travel/travel_r-1.jpg",
+                    "title": "Hotel Du Lion D'or",
+                    "cost": "From $ 2044",
+                    "duration": "<span class='b-blog-one-column__info_delimiter'></span> Duration : <a href='#' class='f-more'>15 days</a>",
+                    "location": "Burma",
+                    "href": "travel_tours_details_left_slidebar.html"
+                    })
+
+                    @@include('../shared/travel/travel_slidebar_content.html', {
+                    "src": "img/travel/travel_r-2.jpg",
+                    "title": "Vietnam Express Southbound",
+                    "cost": "From $ 2044",
+                    "duration": "<span class='b-blog-one-column__info_delimiter'></span> Duration : <a href='#' class='f-more'>15 days</a>",
+                    "location": "Vietnam",
+                    "href": "travel_tours_details_left_slidebar.html"
+                    })
+
+                    @@include('../shared/travel/travel_slidebar_content.html', {
+                    "src": "img/travel/travel_r-3.jpg",
+                    "title": "Cambodian Traveller",
+                    "cost": "From $ 2044",
+                    "duration": "<span class='b-blog-one-column__info_delimiter'></span> Duration : <a href='#' class='f-more'>15 days</a>",
+                    "location": "Vietnam",
+                    "href": "travel_tours_details_left_slidebar.html"
+                    })
+
+                    @@include('../shared/travel/travel_slidebar_content.html', {
+                    "src": "img/travel/travel_r-4.jpg",
+                    "title": "Bullet Train from Tokyo",
+                    "cost": "From $ 2044",
+                    "duration": "<span class='b-blog-one-column__info_delimiter'></span> Duration : <a href='#' class='f-more'>15 days</a>",
+                    "location": "Japan",
+                    "href": "travel_tours_details_left_slidebar.html"
+                    })
+
+                    @@include('../shared/travel/travel_slidebar_content.html', {
+                    "src": "img/travel/travel_r-5.jpg",
+                    "title": "Uncover India—Delhi to Goa",
+                    "cost": "From $ 2044",
+                    "duration": "<span class='b-blog-one-column__info_delimiter'></span> Duration : <a href='#' class='f-more'>15 days</a>",
+                    "location": "India",
+                    "href": "travel_tours_details_left_slidebar.html"
+                    })
+                    @@include('../shared/paging.html')
+                </div>
+                <div class="visible-xs-block visible-sm-block b-hr"></div>
+                <div class="col-md-3 col-md-pull-9">
+                    <div class="row">
+                        <div class="col-md-12">
+                            @@include('../shared/travel/travel_search_tour.html')
+                        </div>
+                    </div>
+                    <div class="row b-col-default-indent">
+                        <div class="col-md-12">
+                            @@include('../shared/travel/travel_categories_filter.html', {
+                            "title": "tour locations"
+                            })
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            @@include('../shared/travel/travel_sidebar_accordion.html', {
+                            "title": "Featured tours"
+                            })
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+</div>
+
+@@include('../templates/footer.html')
+</body>
+</html>

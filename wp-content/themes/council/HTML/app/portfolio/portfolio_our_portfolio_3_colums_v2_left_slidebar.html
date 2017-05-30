@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Portfolio: Three Columns Left Sidebar | Frexy Responsive HTML Template</title>
+    @@include('../templates/header-links.html')
+</head>
+<body>
+@@include('../templates/header.html')
+@@include('../templates/inner-header-description.html', {"title": "Our portfolio", "description": "Check our portfolio 3 columns layout sample"})
+
+<div class="l-main-container">
+    <div class="b-breadcrumbs f-breadcrumbs">
+        <div class="container">
+            <ul>
+                <li><a href="#"><i class="fa fa-home"></i>Home</a></li>
+                <li><i class="fa fa-angle-right"></i><a href="#"> Portfolio</a></li>
+                <li><i class="fa fa-angle-right"></i><span>Three Columns</span></li>
+                <li><i class="fa fa-angle-right"></i><span>Left Sidebar</span></li>
+            </ul>
+        </div>
+    </div>
+    <div class="container ">
+        <div class="l-inner-page-container">
+            <div class="row">
+                <div class="col-md-9 col-md-push-3">
+                    @@include('../shared/portfolio/portfolio_content_3column.html')
+                </div>
+                <div class="col-md-3 col-md-pull-9">
+                    <div class="b-categories-filter">
+                        <h4 class="f-primary-b b-h4-special f-h4-special--gray f-h4-special">Blog Categories</h4>
+                        @@include('../shared/web-categories.html')
+                    </div>
+                    <h4 class="f-primary-b b-h4-special f-h4-special f-h4-special--gray b-h4-special--portfolio">popular posts</h4>
+                    <div class="b-blog-short-post b-blog-short-post--img-hover-bordered b-blog-short-post--w-img f-blog-short-post--w-img row">
+                        @@include('../shared/popular_product-v2.html')
+                    </div>
+                    <h4 class="f-primary-b b-h4-special f-h4-special f-h4-special--gray b-h4-special--portfolio">tags cloud</h4>
+                    @@include('../shared/tags.html')
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+@@include('../templates/footer.html')
+
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Header 4 | Frexy Responsive HTML Template</title>
+    @@include('../templates/header-links.html')
+</head>
+<body>
+  <header class="b-header--bottom-menu">
+      <div class="container b-header__box b-header--hide">
+          <a href="/" class="b-left b-logo"><img class="color-theme" data-retina src="img/logo-header-default.png" alt="Logo" /></a>
+          <div class="b-right b-header-ico-group f-header-ico-group b-right">
+              <span class="b-header__search-box">
+                  <i class="fa fa-search"></i>
+                  <input type="text" placeholder="Enter your keywords"/>
+              </span>
+              <span class="b-header__social-box">
+                  <a href="#"><i class="fa fa-facebook"></i></a>
+                  <a href="#"><i class="fa fa-twitter"></i></a>
+                  <a href="#"><i class="fa fa-pinterest"></i></a>
+                  <a href="#"><i class="fa fa-linkedin"></i></a>
+                  <a href="#"><i class="fa fa-dribbble"></i></a>
+              </span>
+          </div>
+          <div class="b-top-nav-show-slide f-top-nav-show-slide j-top-nav-show-slide b-right"><i class="fa fa-align-justify"></i></div>
+      </div>
+      <div class="container b-relative">
+          <div class="b-header-r">
+              <nav class="b-top-nav b-top-nav--bottom f-top-nav j-top-nav">
+                  @@include('../templates/header-menu.html')
+              </nav>
+              <div class="b-option-total-cart">
+                  <div class="b-option-total-cart__goods">
+                      <a href="#" class="f-option-total-cart__numbers b-option-total-cart__numbers"><i class="fa fa-shopping-cart"></i> Cart [ 0 ] item</a>
+                      <div class="b-option-cart__items">
+                          <div class="b-option-cart__items__title f-option-cart__items__title f-default-l">Recently added item(s)</div>
+                          <ul>
+                              <li>
+                                  <div class="b-option-cart__items__img">
+                                      <div class="view view-sixth">
+                                          <img data-retina="" src="img/shop/cart_mini_pic.jpg" alt="">
+                                          <div class="b-item-hover-action f-center mask">
+                                              <div class="b-item-hover-action__inner">
+                                                  <div class="b-item-hover-action__inner-btn_group">
+                                                      <a href="#" class="b-btn f-btn b-btn-light f-btn-light info"><i class="fa fa-link"></i></a>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div class="b-option-cart__items__descr">
+                                      <strong class="b-option-cart__descr__title f-option-cart__descr__title"><a href="#">Product Example</a></strong>
+                                      <span class="b-option-cart__descr__cost f-option-cart__descr__cost">1 x $239</span>
+                                  </div>
+                                  <i class="fa fa-times b-icon--fa"></i>
+                              </li>
+                              <li>
+                                  <div class="b-option-cart__items__img">
+                                      <div class="view view-sixth">
+                                          <img data-retina="" src="img/shop/cart_mini_pic.jpg" alt="">
+                                          <div class="b-item-hover-action f-center mask">
+                                              <div class="b-item-hover-action__inner">
+                                                  <div class="b-item-hover-action__inner-btn_group">
+                                                      <a href="#" class="b-btn f-btn b-btn-light f-btn-light info"><i class="fa fa-link"></i></a>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div class="b-option-cart__items__descr">
+                                      <strong class="b-option-cart__descr__title f-default-b f-option-cart__descr__title"><a href="#">Product Example</a></strong>
+                                      <span class="b-option-cart__descr__cost f-option-cart__descr__cost">1 x $239</span>
+                                  </div>
+                                  <i class="fa fa-times b-icon--fa"></i>
+                              </li>
+                          </ul>
+                          <div class="b-option-cart__btn">
+                              <button class="button-xs button-gray-light">Cancel</button>
+                              <button class="button-xs">Check out  </button>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </header>
+  <div class="j-menu-container"></div>
+  <div class="l-main-container">
+    @@include('../shared/homepage_index/slider.html', {"class": "j-fullscreenslider"})
+    @@include('../shared/homepage_index/content.html')
+  </div>
+
+  @@include('../templates/footer.html')
+</body>
+</html>

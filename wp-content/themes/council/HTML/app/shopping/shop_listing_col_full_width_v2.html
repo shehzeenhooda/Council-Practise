@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Shopping: List Full width v2 | Frexy Responsive HTML Template</title>
+    @@include('../templates/header-links.html')
+</head>
+<body>
+    @@include('../templates/header.html')
+    @@include('../templates/inner-header-description.html', {"title": "Online store", "description": "This is online store listing products sample page"})
+    <div class="l-main-container">
+
+        <div class="b-breadcrumbs f-breadcrumbs">
+            <div class="container">
+                <ul>
+                    <li><a href=""><i class="fa fa-home"></i>Home</a></li>
+                    <li><i class="fa fa-angle-right"></i><a href="#">Shopping</a></li>
+                    <li><i class="fa fa-angle-right"></i><span>Listing Col Full Width v2</span></li>
+                </ul>
+            </div>
+        </div>
+
+        <section class="b-infoblock">
+            <div class="container">
+                @@include('../shared/shop/shop_sort_panel.html')
+                <div class="row">
+                    <div class="b-col-default-indent">
+                        <div class="col-md-6">
+                            <div class="b-news-item b-news-item--medium-size f-news-item">
+                                @@include('../shared/hover_image/hover_image_shop.html', {"src": "img/shop/shop_1.jpg", "class": "b-news-item__img", "link":"shop_detail.html"})
+                                @@include('../shared/shop/shop_item_info.html')
+                                <div class="b-action-info f-primary-b">
+                                    <div class="b-action-info_text f-action-info_text">sale</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="b-news-item b-news-item--medium-size f-news-item">
+                                @@include('../shared/hover_image/hover_image_shop.html', {"src": "img/shop/shop_2.jpg", "class": "b-news-item__img", "link":"shop_detail.html"})
+                                @@include('../shared/shop/shop_item_info.html')
+                                <div class="b-action-info f-primary-b">
+                                    <div class="b-action-info_text f-action-info_text">sale</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clearfix hidden-xs"></div>
+                        <div class="col-md-6">
+                            <div class="b-news-item b-news-item--medium-size f-news-item">
+                                @@include('../shared/hover_image/hover_image_shop.html', {"src": "img/shop/shop_3.jpg", "class": "b-news-item__img", "link":"shop_detail.html"})
+                                @@include('../shared/shop/shop_item_info.html')
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="b-news-item b-news-item--medium-size f-news-item">
+                                @@include('../shared/hover_image/hover_image_shop.html', {"src": "img/shop/shop_4.jpg", "class": "b-news-item__img", "link":"shop_detail.html"})
+                                @@include('../shared/shop/shop_item_info.html')
+                                <div class="b-action-info f-primary-b">
+                                    <div class="b-action-info_text f-action-info_text">sale</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clearfix hidden-xs"></div>
+                        <div class="col-md-6">
+                            <div class="b-news-item b-news-item--medium-size f-news-item">
+                                @@include('../shared/hover_image/hover_image_shop.html', {"src": "img/shop/shop_5.jpg", "class": "b-news-item__img", "link":"shop_detail.html"})
+                                @@include('../shared/shop/shop_item_info.html')
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="b-news-item b-news-item--medium-size f-news-item">
+                                @@include('../shared/hover_image/hover_image_shop.html', {"src": "img/shop/shop_6.jpg", "class": "b-news-item__img", "link":"shop_detail.html"})
+                                @@include('../shared/shop/shop_item_info.html')
+                            </div>
+                        </div>
+                        <div class="clearfix hidden-xs"></div>
+                        <div class="col-md-6">
+                            <div class="b-news-item b-news-item--medium-size f-news-item">
+                                @@include('../shared/hover_image/hover_image_shop.html', {"src": "img/shop/shop_1.jpg", "class": "b-news-item__img", "link":"shop_detail.html"})
+                                @@include('../shared/shop/shop_item_info.html')
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="b-news-item b-news-item--medium-size f-news-item">
+                                @@include('../shared/hover_image/hover_image_shop.html', {"src": "img/shop/shop_2.jpg", "class": "b-news-item__img", "link":"shop_detail.html"})
+                                @@include('../shared/shop/shop_item_info.html')
+                            </div>
+                        </div>
+                        <div class="clearfix hidden-xs"></div>
+                    </div>
+
+                    <div class="container">
+                        @@include('../shared/paging.html')
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+    @@include('../templates/footer.html')
+</body>
+</html>

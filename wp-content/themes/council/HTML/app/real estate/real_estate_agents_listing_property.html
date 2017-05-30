@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Real Estate: Agents Listing Property | Frexy Responsive HTML Template</title>
+    @@include('../templates/header-links.html')
+</head>
+<body>
+@@include('../templates/header.html')
+@@include('../templates/inner-header-description.html', {"title": "Real Estate Agents Listing", "description": "Listing Property"})
+<div class="l-main-container">
+
+    <div class="b-breadcrumbs f-breadcrumbs">
+        <div class="container">
+            <ul>
+                <li><a href="#"><i class="fa fa-home"></i>Home</a></li>
+                <li><i class="fa fa-angle-right"></i><a href="#">Real Estate</a></li>
+                <li><i class="fa fa-angle-right"></i><span>Agents Listing property</span></li>
+            </ul>
+        </div>
+    </div>
+    <div class="l-inner-page-container">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9 col-md-push-3">
+                    <div class="b-blog-one-column__row b-box-important b-diagonal-line-bg-light">
+                        <div class="row">
+                            <div class="col-sm-6 col-md-4">
+                                <img data-retina="" src="img/real_state/agent-1.jpg" alt="">
+                            </div>
+                            <div class="col-sm-6 col-md-8">
+                                <div class="f-primary-l f-title-big f-h4-special b-blog__title clearfix f-title-big--name">
+                                    <span>Julia Robert</span>
+                                </div>
+                                <div class="b-form-row f-h4-special clearfix">
+                                    <div class="pull-right">
+                                        <span class="b-txt-wrap"><button class="button-xs b-btn-title-real-estate">send message</button></span>
+                                    </div>
+                                    <div class="b-blog-one-column__info_container c-default">
+                                        <span class="b-txt-wrap">Office: 041-456-3692 <span class="b-blog-one-column__info_delimiter"></span></span>
+                                        <span class="b-txt-wrap">Mobile: 0200-123-4567 <span class="b-blog-one-column__info_delimiter"></span></span>
+                                        <span class="b-txt-wrap">Fax: 041-789-4561</span>
+                                    </div>
+                                </div>
+                                <div class="b-form-row b-blog-one-column__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac lacinia dolor. Nullam semper euismod rhoncus. Curabitur pulvinar, mauris luctus semper rutrum, lacus est volutpat urna, sed fringilla augue nunc nec dolor. Integer sit amet massa non quam semper sodales</div>
+                                <div class="b-form-row b-null-bottom-indent">
+                                    <a href="#" class="b-btn-group-hor__item f-btn-group-hor__item">
+                                        <i class="fa fa-twitter"></i>
+                                    </a>
+                                    <a href="#" class="b-btn-group-hor__item f-btn-group-hor__item">
+                                        <i class="fa fa-facebook"></i>
+                                    </a>
+                                    <a href="#" class="b-btn-group-hor__item f-btn-group-hor__item">
+                                        <i class="fa fa-dribbble"></i>
+                                    </a>
+                                    <a href="#" class="b-btn-group-hor__item f-btn-group-hor__item">
+                                        <i class="fa fa-behance"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    @@include('../shared/real_estate/real_estate_sidebar_content.html', {
+                    "src": "img/real_state/real_estate_content-2.jpg",
+                    "title": "700 Front Street, Key West, FL",
+                    "cost": "$3,850 Per Month",
+                    "duration": "",
+                    "href": "real_estate_home_detail_left_sidebar.html"
+                    })
+
+                    @@include('../shared/real_estate/real_estate_sidebar_content.html', {
+                    "src": "img/real_state/real_estate_content-3.jpg",
+                    "title": "1903 Hollywood Boulevard",
+                    "cost": "$3,850 Per Month",
+                    "duration": "",
+                    "href": "real_estate_home_detail_left_sidebar.html"
+                    })
+
+                    @@include('../shared/real_estate/real_estate_sidebar_content.html', {
+                    "src": "img/real_state/real_estate_content-4.jpg",
+                    "title": "401 Biscayne Boulevard, Miami",
+                    "cost": "$3,850 Per Month",
+                    "duration": "",
+                    "href": "real_estate_home_detail_left_sidebar.html"
+                    })
+
+                    @@include('../shared/real_estate/real_estate_sidebar_content.html', {
+                    "src": "img/real_state/real_estate_content-5.jpg",
+                    "title": "3015 Grand Avenue, CocoWalk",
+                    "cost": "$3,850 Per Month",
+                    "duration": "",
+                    "href": "real_estate_home_detail_left_sidebar.html"
+                    })
+
+                    @@include('../shared/paging.html')
+                </div>
+                <div class="visible-xs-block visible-sm-block b-hr"></div>
+                <div class="col-md-3 col-md-pull-9">
+                    <div class="row">
+                        <div class="col-md-12">
+                            @@include('../shared/real_estate/real_estate_search_hotel.html')
+                        </div>
+                    </div>
+                    <div class="row b-col-default-indent">
+                        <div class="col-md-12">
+                            @@include('../shared/real_estate/real_estate_categories.html', {
+                            "title": "Property Types"
+                            })
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            @@include('../shared/real_estate/real_estate_accordion.html', {
+                            "title": "Featured Properties"
+                            })
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+@@include('../templates/footer.html')
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Blog: One Column Right Sidebar v3 | Frexy Responsive HTML Template</title>
+  @@include('../templates/header-links.html')
+</head>
+<body>
+  @@include('../templates/header.html')
+  @@include('../templates/inner-header-description.html', {"title": "Our Blog", "description": "One Column Right Sidebar v3"})
+<div class="l-main-container">
+
+<div class="b-breadcrumbs f-breadcrumbs">
+    <div class="container">
+        <ul>
+            <li><a href="#"><i class="fa fa-home"></i>Home</a></li>
+            <li><i class="fa fa-angle-right"></i><a href="#">Blogs</a></li>
+            <li><i class="fa fa-angle-right"></i><span>One Column Right Sidebar v3</span></li>
+        </ul>
+    </div>
+</div>
+
+<div class="l-inner-page-container">
+    <div class="container">
+        <div class="col-md-9">
+            <div class="b-blog-one-column__top_slider">
+                <div class="b-slidercontainer b-slider b-slider--thumb b-slider--navi-alt b-slider--navi-five-thumb">
+                    <div class="j-contentwidthslider j-contentwidthslider-innerheight j-arr-hide" data-height="570" data-thumb-amount="5">
+                        <ul>
+                            <li data-transition="slotfade-vertical" data-thumb="img/blog/slider/slider_thumbnail_01-01.jpg">
+                                <img data-retina src="img/blog/slider/slider_image_01.jpg">
+                                @@include('../shared/blog/our_blog_1_column_top_content_popover_text_v3.html')
+                            </li>
+                            <li data-transition="slotfade-vertical" data-thumb="img/blog/slider/slider_thumbnail_01-05.jpg">
+                                <img data-retina src="img/slider/section-bg-3.jpg">
+                                @@include('../shared/blog/our_blog_1_column_top_content_popover_text_v3.html')
+                            </li>
+                            <li data-transition="slotfade-vertical" data-thumb="img/blog/slider/slider_thumbnail_01-04.jpg">
+                                <img data-retina src="img/slider/slider-education.jpg">
+                                @@include('../shared/blog/our_blog_1_column_top_content_popover_text_v3.html')
+                            </li>
+                            <li data-transition="slotfade-vertical" data-thumb="img/blog/slider/slider_thumbnail_01-03.jpg">
+                                <img data-retina src="img/slider/section-bg-2.jpg">
+                                @@include('../shared/blog/our_blog_1_column_top_content_popover_text_v3.html')
+                            </li>
+                            <li data-transition="slotfade-vertical" data-thumb="img/blog/slider/slider_thumbnail_01-02.jpg">
+                                <img data-retina src="img/slider/section-bg-4.jpg">
+                                @@include('../shared/blog/our_blog_1_column_top_content_popover_text_v3.html')
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            @@include('../shared/blog/blog-content-sideblock.html')
+        </div>
+        <div class="visible-xs-block visible-sm-block b-hr"></div>
+        <div class="col-md-3">
+            @@include('../shared/blog/blog-sidebar.html')
+        </div>
+    </div>
+</div>
+
+
+
+</div>
+
+  @@include('../templates/footer.html')
+</body>
+</html>

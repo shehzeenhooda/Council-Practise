@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Portfolio: Four Columns v1 | Frexy Responsive HTML Template</title>
+    @@include('../templates/header-links.html')
+</head>
+<body>
+@@include('../templates/header.html')
+@@include('../templates/inner-header-description.html', {"title": "Our portfolio", "description": "Check our portfolio 3 columns layout sample"})
+
+<div class="l-main-container">
+<div class="b-breadcrumbs f-breadcrumbs">
+    <div class="container">
+        <ul>
+            <li><a href="#"><i class="fa fa-home"></i>Home</a></li>
+            <li><i class="fa fa-angle-right"></i><a href="#"> Portfolio</a></li>
+            <li><i class="fa fa-angle-right"></i><span>Four Columns</span></li>
+            <li><i class="fa fa-angle-right"></i><span>Version1</span></li>
+        </ul>
+    </div>
+</div>
+<div class="container ">
+<div class="l-inner-page-container">
+<div class="row">
+<div class="col-md-12">
+    <div class="b-category-filter b-category-filter--portfolio f-category-filter j-filter">
+        <ul>
+            <li class="is-category-filter-active"><a data-filter="all" href="#">All</a></li>
+            <li><a data-filter=".j-filter-graphic" href="#">3D Graphic</a></li>
+            <li><a data-filter=".j-filter-illustration" href="#">Illustrations</a></li>
+            <li><a data-filter=".j-filter-web" href="#">Web Design</a></li>
+            <li><a data-filter=".j-filter-mob" href="#">Mobile Design</a></li>
+            <li><a data-filter=".j-filter-brand" href="#">Branding Design</a></li>
+        </ul>
+    </div>
+    <div class="j-filter-content">
+        <div class="row b-portfolio-gallery j-masonry">
+            <div class="masonry-gridSizer col-lg-3 col-md-4 col-sm-6 col-xs-12"></div>
+            <div class="j-masonry-item col-lg-3 col-md-4 col-sm-6 col-xs-12 j-filter-graphic j-filter-web">
+                <div>
+                    <div class="b-app-with-img__item">
+                        @@include('../shared/hover_image/hover_image_animated_2_icon.html', {"src": "img/portfolio/portfolio-col4-1.jpg", "big": "img/portfolio/big/portfolio-col4-1.jpg", "class": "b-app-with-img__item_img", "href": "portfolio_our_portfolio_detail.html", "title": "Mobile games"})
+                        <div class="b-app-with-img__item_text f-center">
+                            <div class="b-app-with-img__item_name f-app-with-img__item_name f-primary-b"><a href="portfolio_our_portfolio_detail.html">Mobile games</a></div>
+                            <div class="b-app-with-img__item_info f-app-with-img__item_info f-primary">Mobile Design, 3D Graphic</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="j-masonry-item col-lg-3 col-md-4 col-sm-6 col-xs-12 j-filter-graphic j-filter-web">
+                <div>
+                    <div class="b-app-with-img__item">
+                        @@include('../shared/hover_image/hover_video_animated_2_icon.html', {"src": "img/portfolio/video-pic8.jpg", "class": "b-app-with-img__item_img", "href": "portfolio_our_portfolio_detail.html", "title": "Mobile games", "full": "http://player.vimeo.com/video/48511895"})
+                        <div class="b-app-with-img__item_text f-center">
+                            <div class="b-app-with-img__item_name f-app-with-img__item_name f-primary-b"><a href="portfolio_our_portfolio_detail.html">Mobile games</a></div>
+                            <div class="b-app-with-img__item_info f-app-with-img__item_info f-primary">Mobile Design, 3D Graphic</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="j-masonry-item col-lg-3 col-md-4 col-sm-6 col-xs-12 j-filter-illustration">
+                <div>
+                    <div class="b-app-with-img__item">
+                        @@include('../shared/hover_image/hover_image_animated_2_icon.html', {"src": "img/portfolio/portfolio-col4-2.jpg", "big": "img/portfolio/big/portfolio-col4-2.jpg", "class": "b-app-with-img__item_img", "href": "portfolio_our_portfolio_detail.html", "title": "Mobile games"})
+                        <div class="b-app-with-img__item_text f-center">
+                            <div class="b-app-with-img__item_name f-app-with-img__item_name f-primary-b"><a href="portfolio_our_portfolio_detail.html">Mobile games</a></div>
+                            <div class="b-app-with-img__item_info f-app-with-img__item_info f-primary">Mobile Design, 3D Graphic</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="j-masonry-item col-lg-3 col-md-4 col-sm-6 col-xs-12 j-filter-graphic j-filter-mob">
+                <div>
+                    <div class="b-app-with-img__item">
+                        @@include('../shared/hover_image/hover_image_animated_2_icon.html', {"src": "img/portfolio/portfolio-col4-3.jpg", "big": "img/portfolio/big/portfolio-col4-3.jpg", "class": "b-app-with-img__item_img", "href": "portfolio_our_portfolio_detail.html", "title": "Mobile games"})
+                        <div class="b-app-with-img__item_text f-center">
+                            <div class="b-app-with-img__item_name f-app-with-img__item_name f-primary-b"><a href="portfolio_our_portfolio_detail.html">Mobile games</a></div>
+                            <div class="b-app-with-img__item_info f-app-with-img__item_info f-primary">Mobile Design, 3D Graphic</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="j-masonry-item col-lg-3 col-md-4 col-sm-6 col-xs-12 j-filter-illustration j-filter-brand">
+                <div>
+                    <div class="b-app-with-img__item">
+                        @@include('../shared/hover_image/hover_image_animated_2_icon.html', {"src": "img/portfolio/portfolio-col4-4.jpg", "big": "img/portfolio/big/portfolio-col4-4.jpg", "class": "b-app-with-img__item_img", "href": "portfolio_our_portfolio_detail.html", "title": "Mobile games"})
+                        <div class="b-app-with-img__item_text f-center">
+                            <div class="b-app-with-img__item_name f-app-with-img__item_name f-primary-b"><a href="portfolio_our_portfolio_detail.html">Mobile games</a></div>
+                            <div class="b-app-with-img__item_info f-app-with-img__item_info f-primary">Mobile Design, 3D Graphic</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="j-masonry-item col-lg-3 col-md-4 col-sm-6 col-xs-12 j-filter-graphic j-filter-web">
+                <div>
+                    <div class="b-app-with-img__item">
+                        @@include('../shared/hover_image/hover_video_animated_2_icon.html', {"src": "img/portfolio/video-pic13.jpg", "class": "b-app-with-img__item_img", "href": "portfolio_our_portfolio_detail.html", "title": "Mobile games", "full": "http://player.vimeo.com/video/74515970"})
+                        <div class="b-app-with-img__item_text f-center">
+                            <div class="b-app-with-img__item_name f-app-with-img__item_name f-primary-b"><a href="portfolio_our_portfolio_detail.html">Mobile games</a></div>
+                            <div class="b-app-with-img__item_info f-app-with-img__item_info f-primary">Mobile Design, 3D Graphic</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="j-masonry-item col-lg-3 col-md-4 col-sm-6 col-xs-12 j-filter-web j-filter-mob">
+                <div>
+                    <div class="b-app-with-img__item">
+                        @@include('../shared/hover_image/hover_image_animated_2_icon.html', {"src": "img/portfolio/portfolio-col4-5.jpg", "big": "img/portfolio/big/portfolio-col4-5.jpg", "class": "b-app-with-img__item_img", "href": "portfolio_our_portfolio_detail.html", "title": "Mobile games"})
+                        <div class="b-app-with-img__item_text f-center">
+                            <div class="b-app-with-img__item_name f-app-with-img__item_name f-primary-b"><a href="portfolio_our_portfolio_detail.html">Mobile games</a></div>
+                            <div class="b-app-with-img__item_info f-app-with-img__item_info f-primary">Mobile Design, 3D Graphic</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="j-masonry-item col-lg-3 col-md-4 col-sm-6 col-xs-12 j-filter-graphic">
+                <div>
+                    <div class="b-app-with-img__item">
+                        @@include('../shared/hover_image/hover_image_animated_2_icon.html', {"src": "img/portfolio/portfolio-col4-6.jpg", "big": "img/portfolio/big/portfolio-col4-6.jpg", "class": "b-app-with-img__item_img", "href": "portfolio_our_portfolio_detail.html", "title": "Mobile games"})
+                        <div class="b-app-with-img__item_text f-center">
+                            <div class="b-app-with-img__item_name f-app-with-img__item_name f-primary-b"><a href="portfolio_our_portfolio_detail.html">Mobile games</a></div>
+                            <div class="b-app-with-img__item_info f-app-with-img__item_info f-primary">Mobile Design, 3D Graphic</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="j-masonry-item col-lg-3 col-md-4 col-sm-6 col-xs-12 j-filter-graphic j-filter-web">
+                <div>
+                    <div class="b-app-with-img__item">
+                        @@include('../shared/hover_image/hover_video_animated_2_icon.html', {"src": "img/portfolio/video-pic12.jpg", "class": "b-app-with-img__item_img", "href": "portfolio_our_portfolio_detail.html", "title": "Mobile games", "full": "http://player.vimeo.com/video/74515968"})
+                        <div class="b-app-with-img__item_text f-center">
+                            <div class="b-app-with-img__item_name f-app-with-img__item_name f-primary-b"><a href="portfolio_our_portfolio_detail.html">Mobile games</a></div>
+                            <div class="b-app-with-img__item_info f-app-with-img__item_info f-primary">Mobile Design, 3D Graphic</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="j-masonry-item col-lg-3 col-md-4 col-sm-6 col-xs-12 j-filter-mob j-filter-brand">
+                <div>
+                    <div class="b-app-with-img__item">
+                        @@include('../shared/hover_image/hover_image_animated_2_icon.html', {"src": "img/portfolio/portfolio-col4-7.jpg", "big": "img/portfolio/big/portfolio-col4-7.jpg", "class": "b-app-with-img__item_img", "href": "portfolio_our_portfolio_detail.html", "title": "Mobile games"})
+                        <div class="b-app-with-img__item_text f-center">
+                            <div class="b-app-with-img__item_name f-app-with-img__item_name f-primary-b"><a href="portfolio_our_portfolio_detail.html">Mobile games</a></div>
+                            <div class="b-app-with-img__item_info f-app-with-img__item_info f-primary">Mobile Design, 3D Graphic</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="j-masonry-item col-lg-3 col-md-4 col-sm-6 col-xs-12 j-filter-web j-filter-brand">
+                <div>
+                    <div class="b-app-with-img__item">
+                        @@include('../shared/hover_image/hover_image_animated_2_icon.html', {"src": "img/portfolio/portfolio-col4-8.jpg", "big": "img/portfolio/big/portfolio-col4-8.jpg", "class": "b-app-with-img__item_img", "href": "portfolio_our_portfolio_detail.html", "title": "Mobile games"})
+                        <div class="b-app-with-img__item_text f-center">
+                            <div class="b-app-with-img__item_name f-app-with-img__item_name f-primary-b"><a href="portfolio_our_portfolio_detail.html">Mobile games</a></div>
+                            <div class="b-app-with-img__item_info f-app-with-img__item_info f-primary">Mobile Design, 3D Graphic</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="j-masonry-item col-lg-3 col-md-4 col-sm-6 col-xs-12 j-filter-illustration">
+                <div>
+                    <div class="b-app-with-img__item">
+                        @@include('../shared/hover_image/hover_image_animated_2_icon.html', {"src": "img/portfolio/portfolio-col4-9.jpg", "big": "img/portfolio/big/portfolio-col4-9.jpg", "class": "b-app-with-img__item_img", "href": "portfolio_our_portfolio_detail.html", "title": "Mobile games"})
+                        <div class="b-app-with-img__item_text f-center">
+                            <div class="b-app-with-img__item_name f-app-with-img__item_name f-primary-b"><a href="portfolio_our_portfolio_detail.html">Mobile games</a></div>
+                            <div class="b-app-with-img__item_info f-app-with-img__item_info f-primary">Mobile Design, 3D Graphic</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="j-masonry-item col-lg-3 col-md-4 col-sm-6 col-xs-12 j-filter-graphic j-filter-web">
+                <div>
+                    <div class="b-app-with-img__item">
+                        @@include('../shared/hover_image/hover_video_animated_2_icon.html', {"src": "img/portfolio/video-pic11.jpg", "class": "b-app-with-img__item_img", "href": "portfolio_our_portfolio_detail.html", "title": "Mobile games", "full": "http://player.vimeo.com/video/70553505"})
+                        <div class="b-app-with-img__item_text f-center">
+                            <div class="b-app-with-img__item_name f-app-with-img__item_name f-primary-b"><a href="portfolio_our_portfolio_detail.html">Mobile games</a></div>
+                            <div class="b-app-with-img__item_info f-app-with-img__item_info f-primary">Mobile Design, 3D Graphic</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="j-masonry-item col-lg-3 col-md-4 col-sm-6 col-xs-12 j-filter-graphic">
+                <div>
+                    <div class="b-app-with-img__item">
+                        @@include('../shared/hover_image/hover_image_animated_2_icon.html', {"src": "img/portfolio/portfolio-col4-11.jpg", "big": "img/portfolio/big/portfolio-col4-11.jpg", "class": "b-app-with-img__item_img", "href": "portfolio_our_portfolio_detail.html", "title": "Mobile games"})
+                        <div class="b-app-with-img__item_text f-center">
+                            <div class="b-app-with-img__item_name f-app-with-img__item_name f-primary-b"><a href="portfolio_our_portfolio_detail.html">Mobile games</a></div>
+                            <div class="b-app-with-img__item_info f-app-with-img__item_info f-primary">Mobile Design, 3D Graphic</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="j-masonry-item col-lg-3 col-md-4 col-sm-6 col-xs-12 j-filter-mob j-filter-brand">
+                <div>
+                    <div class="b-app-with-img__item">
+                        @@include('../shared/hover_image/hover_image_animated_2_icon.html', {"src": "img/portfolio/portfolio-col4-12.jpg", "big": "img/portfolio/big/portfolio-col4-12.jpg", "class": "b-app-with-img__item_img", "href": "portfolio_our_portfolio_detail.html", "title": "Mobile games"})
+                        <div class="b-app-with-img__item_text f-center">
+                            <div class="b-app-with-img__item_name f-app-with-img__item_name f-primary-b"><a href="portfolio_our_portfolio_detail.html">Mobile games</a></div>
+                            <div class="b-app-with-img__item_info f-app-with-img__item_info f-primary">Mobile Design, 3D Graphic</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="j-masonry-item col-lg-3 col-md-4 col-sm-6 col-xs-12 j-filter-graphic j-filter-web j-filter-mob">
+                <div>
+                    <div class="b-app-with-img__item">
+                        @@include('../shared/hover_image/hover_image_animated_2_icon.html', {"src": "img/portfolio/portfolio-col4-13.jpg", "big": "img/portfolio/big/portfolio-col4-13.jpg", "class": "b-app-with-img__item_img", "href": "portfolio_our_portfolio_detail.html", "title": "Mobile games"})
+                        <div class="b-app-with-img__item_text f-center">
+                            <div class="b-app-with-img__item_name f-app-with-img__item_name f-primary-b"><a href="portfolio_our_portfolio_detail.html">Mobile games</a></div>
+                            <div class="b-app-with-img__item_info f-app-with-img__item_info f-primary">Mobile Design, 3D Graphic</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="j-masonry-item col-lg-3 col-md-4 col-sm-6 col-xs-12 j-filter-illustration">
+                <div>
+                    <div class="b-app-with-img__item">
+                        @@include('../shared/hover_image/hover_image_animated_2_icon.html', {"src": "img/portfolio/portfolio-col4-14.jpg", "big": "img/portfolio/big/portfolio-col4-14.jpg", "class": "b-app-with-img__item_img", "href": "portfolio_our_portfolio_detail.html", "title": "Mobile games"})
+                        <div class="b-app-with-img__item_text f-center">
+                            <div class="b-app-with-img__item_name f-app-with-img__item_name f-primary-b"><a href="portfolio_our_portfolio_detail.html">Mobile games</a></div>
+                            <div class="b-app-with-img__item_info f-app-with-img__item_info f-primary">Mobile Design, 3D Graphic</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="j-masonry-item col-lg-3 col-md-4 col-sm-6 col-xs-12 j-filter-graphic j-filter-brand">
+                <div>
+                    <div class="b-app-with-img__item">
+                        @@include('../shared/hover_image/hover_image_animated_2_icon.html', {"src": "img/portfolio/portfolio-col4-15.jpg", "big": "img/portfolio/big/portfolio-col4-15.jpg", "class": "b-app-with-img__item_img", "href": "portfolio_our_portfolio_detail.html", "title": "Mobile games"})
+                        <div class="b-app-with-img__item_text f-center">
+                            <div class="b-app-with-img__item_name f-app-with-img__item_name f-primary-b"><a href="portfolio_our_portfolio_detail.html">Mobile games</a></div>
+                            <div class="b-app-with-img__item_info f-app-with-img__item_info f-primary">Mobile Design, 3D Graphic</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="j-masonry-item col-lg-3 col-md-4 col-sm-6 col-xs-12 j-filter-web j-filter-mob">
+                <div>
+                    <div class="b-app-with-img__item">
+                        @@include('../shared/hover_image/hover_image_animated_2_icon.html', {"src": "img/portfolio/portfolio-col4-16.jpg", "big": "img/portfolio/big/portfolio-col4-16.jpg", "class": "b-app-with-img__item_img", "href": "portfolio_our_portfolio_detail.html", "title": "Mobile games"})
+                        <div class="b-app-with-img__item_text f-center">
+                            <div class="b-app-with-img__item_name f-app-with-img__item_name f-primary-b"><a href="portfolio_our_portfolio_detail.html">Mobile games</a></div>
+                            <div class="b-app-with-img__item_info f-app-with-img__item_info f-primary">Mobile Design, 3D Graphic</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="j-masonry-item col-lg-3 col-md-4 col-sm-6 col-xs-12 j-filter-graphic j-filter-brand">
+                <div>
+                    <div class="b-app-with-img__item">
+                        @@include('../shared/hover_image/hover_image_animated_2_icon.html', {"src": "img/portfolio/portfolio-col4-17.jpg", "big": "img/portfolio/big/portfolio-col4-17.jpg", "class": "b-app-with-img__item_img", "href": "portfolio_our_portfolio_detail.html", "title": "Mobile games"})
+                        <div class="b-app-with-img__item_text f-center">
+                            <div class="b-app-with-img__item_name f-app-with-img__item_name f-primary-b"><a href="portfolio_our_portfolio_detail.html">Mobile games</a></div>
+                            <div class="b-app-with-img__item_info f-app-with-img__item_info f-primary">Mobile Design, 3D Graphic</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="b-default-top-indent b-remaining--max-box b-remaining--full-width">
+        @@include('../shared/separators/load_more.html')
+    </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+@@include('../templates/footer.html')
+
+</body>
+</html>

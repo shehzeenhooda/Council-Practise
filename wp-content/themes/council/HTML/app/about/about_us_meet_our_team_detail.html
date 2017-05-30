@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>About us: Meet our team detail | Frexy Responsive HTML Template</title>
+  @@include('../templates/header-links.html')
+</head>
+<body>
+    @@include('../templates/header.html')
+    @@include('../templates/inner-header.html', {"title": "Meet our team"})
+<div class="l-main-container">
+
+<div class="b-breadcrumbs f-breadcrumbs">
+    <div class="container">
+        <ul>
+            <li><a href="#"><i class="fa fa-home"></i>Home</a></li>
+            <li><i class="fa fa-angle-right"></i><a href="#">About us</a></li>
+            <li><i class="fa fa-angle-right"></i><span>Meet our team</span></li>
+        </ul>
+    </div>
+</div>
+<section class="b-infoblock--small b-diagonal-line-bg-light">
+    <div class="container">
+        <div class="row b-col-default-indent">
+            <div class="col-md-6">
+                @@include('../shared/about_us_connection.html')
+            </div>
+            <div class="col-md-6">
+                <h3 class="f-primary-b">CHRISTIAN TELO</h3>
+                <p class="f-primary-l">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed porttitor ligula sit amet ante facilisis, id rutrum est varius. Quisque facilisis lorem vitae lacus volutpat porttitor condimentum vitae est. Mauris gravida quam dui, ac aliquet quam rhoncus et. Donec in mi eget libero aliquet bibendum. </p>
+                <h3 class="c-default f-primary-l f-none-uppercase b-default-top-indent b-null-bottom-indent">Primary Skills</h3>
+                @@include('../shared/list-2-col.html')
+            </div>
+        </div>
+    </div>
+</section>
+<section class="b-infoblock--small">
+    <div class="container">
+        <div class="row b-col-default-indent">
+            <div class="col-md-6">
+                <h3 class="f-primary-b">Member`s skills</h3>
+                <p class="f-primary-l ">Quisque at tortor a libero posuere laoreet vitae sed arcu nunc at augue tincidunt</p>
+                <div class="b-shortcode-example">
+                    @@include('../shared/progressbar/progressbar_small_group.html')
+                </div>
+            </div>
+            <div class="col-md-6">
+                <h3 class="f-primary-b">Education</h3>
+                <p class="f-primary-l ">Quisque at tortor a libero posuere laoreet vitae sed arcu nunc at augue tincidunt</p>
+                <div class="b-shortcode-example">
+                    @@include('../shared/accordion_widget.html')
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="b-infoblock b-diagonal-line-bg-light">
+    <div class="container">
+        <h2 class="f-primary-b f-center">our works</h2>
+        <p class="f-center f-small c-s-62"> Vivamus ac ultrices diam, vitae accumsan tellus. Integer sollicitudin vulputate lacus, congue vulputate nisl eleifend in. </p>
+        @@include('../shared/our_works.html')
+    </div>
+</section>
+<section class="container b-infoblock--without-border">
+        @@include('../shared/follow_block.html')
+</section>
+
+</div>
+
+    @@include('../templates/footer.html')
+</body>
+</html>

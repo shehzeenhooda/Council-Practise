@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Shortcodes: Widgets | Frexy Responsive HTML Template</title>
+    @@include('../templates/header-links.html')
+</head>
+<body>
+@@include('../templates/header.html')
+@@include('../templates/inner-header.html', {"title": "Shortcode"})
+
+<div class="l-main-container">
+<div class="b-breadcrumbs f-breadcrumbs">
+    <div class="container">
+        <ul>
+            <li><a href="#"><i class="fa fa-home"></i>Home</a></li>
+            <li><i class="fa fa-angle-right"></i><a href="#">Shortcode</a></li>
+            <li><i class="fa fa-angle-right"></i><span>Widgets</span></li>
+        </ul>
+    </div>
+</div>
+
+<div class="container">
+<div class="b-infoblock">
+    <div class="row">
+        <div class="col-sm-6 col-lg-3 col-xs-12 b-categories-filter">
+            <h4 class="f-primary-b b-h4-special f-h4-special c-primary">Blog Categories</h4>
+            @@include('../shared/web-categories.html')
+        </div>
+        <div class="col-sm-6 col-lg-3 col-xs-12">
+            <h4 class="f-primary-b b-h4-special f-h4-special c-primary">popular postes</h4>
+
+            <div class="b-blog-short-post b-blog-short-post--img-hover-bordered b-blog-short-post--w-img f-blog-short-post--w-img row">
+                @@include('../shared/popular_product-v2.html', {"hidden": "is-hidden"})
+            </div>
+        </div>
+        <div class="col-sm-6 col-lg-3 col-xs-12">
+            <h4 class="f-primary-b b-h4-special f-h4-special c-primary">Tab wiget</h4>
+
+            <div class="b-shortcode-example">
+                <div class="b-tabs f-tabs j-tabs b-tabs-reset b-tabs--secondary f-tabs--secondary">
+                    <ul class="f-primary-b">
+                        <li><a href="#tabs-31">TWEETS</a></li>
+                        <li><a href="#tabs-32">COMMENTS</a></li>
+                    </ul>
+                    <div class="b-tabs__content">
+                        <div id="tabs-31" class="clearfix">
+                            <div class="b-twitter-feeds__item b-tabs__content-list-item">
+                                <div class="b-twitter-feeds__item_name f-twitter-feeds__item_name f-primary-b"><i
+                                        class="fa fa-twitter"></i> frexy studio
+                                </div>
+                                <div class="b-twitter-feeds__item_twit f-twitter-feeds__item_twit">
+                                    Lorem ipsum dolor sit amet, consectetur adip iscing elit. Curabitur ut blandit
+                                    sapien. <a href="http://t.co/hd3sk" target="_blank">http://t.co/hd3sk</a>
+                                </div>
+                                <div class="b-twitter-feeds__item_date f-twitter-feeds__item_date f-primary-it c-senary">
+                                    2 days ago
+                                </div>
+                            </div>
+                            <div class="b-twitter-feeds__item b-tabs__content-list-item">
+                                <div class="b-twitter-feeds__item_name f-twitter-feeds__item_name f-primary-b"><i
+                                        class="fa fa-twitter"></i> John Doe
+                                </div>
+                                <div class="b-twitter-feeds__item_twit f-twitter-feeds__item_twit">
+                                    Lorem ipsum dolor sit amet, consectetur adip iscing elit. Curabitur ut blandit
+                                    sapien. <a href="http://t.co/hd3sk" target="_blank">http://t.co/hd3sk</a>
+                                </div>
+                                <div class="b-twitter-feeds__item_date f-twitter-feeds__item_date f-primary-it c-senary">
+                                    2 days ago
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tabs-32" class="clearfix">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-lg-3 col-xs-12">
+            <h4 class="f-primary-b b-h4-special f-h4-special">flick images</h4>
+            @@include('../shared/flick_images.html')
+        </div>
+    </div>
+</div>
+<div class="b-infoblock">
+    <div class="row">
+        <div class="col-sm-6 col-lg-3 col-xs-12">
+            <h4 class="f-primary-b b-h4-special f-h4-special c-primary">accordion widget</h4>
+            @@include('../shared/accordion_widget.html')
+        </div>
+        <div class="col-sm-6 col-lg-3 col-xs-12 b-some-examples-secondary b-some-examples-tertiary ">
+            <h4 class="f-primary-b b-h4-special f-h4-special c-primary">Slideshow images</h4>
+
+            <div class="b-some-examples__item f-some-examples__item b-radius-null">
+                <div class="b-some-examples__item_img b-radius-null b-item-hover-action-parent b-carousel-reset b-carousel-arr-square f-carousel-arr-square">
+                    <div class="b-slider-images j-slider-images">
+                        <img class="" data-retina="" src="img/shortcode/slideshow_1.png" alt="">
+                        <img class="" data-retina="" src="img/shortcode/slideshow_2.png" alt="">
+                        <img class="" data-retina="" src="img/shortcode/slideshow_3.png" alt="">
+                    </div>
+                </div>
+                <div class="b-some-examples__item_info">
+                    <div class="b-some-examples__item_info_level b-some-examples__item_name f-some-examples__item_name f-primary-b f-title-small f-uppercase">
+                        <a href="#">Ut magna gravida id elit vitae</a></div>
+                    <div class="b-some-examples__item_info_level b-some-examples__item_description f-some-examples__item_description">
+                        Elementum iaculis sem. Vestibulum magna leo, rhoncus imperdiet dictum ac, vehicula non dui. Cras
+                        orci metus, hendrerit in dapibus ut, fermentum ut nibh. Vestibulum metus lacus, porta eu metus
+                        vel, pulvinar rutrum leo. Lorem ipsum dolor sit amet
+                    </div>
+                    <a href="#" class="f-primary-b f-more f-title-smallest">Read more</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-lg-3 col-xs-12">
+            <div>
+                <h4 class="f-primary-b b-h4-special f-h4-special c-primary">tags cloud</h4>
+                @@include('../shared/tags.html')
+            </div>
+            <div class="b-shortcode-example">
+                <h4 class="f-primary-b b-h4-special f-h4-special c-primary">social icons</h4>
+                <div class="b-social-icons">
+                    <a class="b-social-icon f-social-icon fa fa-facebook" href="#"></a>
+                    <a class="b-social-icon f-social-icon fa fa-twitter" href="#"></a>
+                    <a class="b-social-icon f-social-icon fa fa-pinterest" href="#"></a>
+                    <a class="b-social-icon f-social-icon fa fa-google-plus" href="#"></a>
+                    <a class="b-social-icon f-social-icon fa fa-apple" href="#"></a>
+                    <a class="b-social-icon f-social-icon fa fa-bullseye" href="#"></a>
+                    <a class="b-social-icon f-social-icon fa fa-instagram" href="#"></a>
+                    <a class="b-social-icon f-social-icon fa fa-dribbble" href="#"></a>
+                    <a class="b-social-icon f-social-icon fa fa-github-alt " href="#"></a>
+                    <a class="b-social-icon f-social-icon fa fa-linkedin" href="#"></a>
+                    <a class="b-social-icon f-social-icon fa fa-rss" href="#"></a>
+                    <a class="b-social-icon f-social-icon fa fa-youtube" href="#"></a>
+                </div>
+            </div>
+            <div>
+                <h4 class="f-primary-b b-h4-special f-h4-special c-primary">search widget</h4>
+                <div class="b-form-row b-input-search">
+                    <input class="form-control" type="text" placeholder="Enter your keywords"/>
+                    <span class="b-btn b-btn-search f-btn-search fa fa-search"></span>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-sm-6 col-lg-3 col-xs-12 b-some-examples-secondary b-some-examples-tertiary ">
+            <h4 class="f-primary-b b-h4-special f-h4-special c-primary">free text images</h4>
+
+            <div class="b-some-examples__item f-some-examples__item b-radius-null">
+                <div class="b-some-examples__item_img b-radius-null b-item-hover-action-parent">
+                    <a href="#"><img class="j-data-element animated fadeInDown" data-animate="fadeInDown" data-retina=""
+                                     src="img/shortcode/slideshow_1.png" alt=""></a>
+                </div>
+                <div class="b-some-examples__item_info">
+                    <div class="b-some-examples__item_info_level b-some-examples__item_name f-some-examples__item_name f-primary-b f-title-small f-uppercase">
+                        <a href="#">Ut magna gravida id elit vitae</a></div>
+                    <div class="b-some-examples__item_info_level b-some-examples__item_description f-some-examples__item_description">
+                        Elementum iaculis sem. Vestibulum magna leo, rhoncus imperdiet dictum ac, vehicula non dui. Cras
+                        orci metus, hendrerit in dapibus ut, fermentum ut nibh. Vestibulum metus lacus, porta eu metus
+                        vel, pulvinar rutrum leo. Lorem ipsum dolor sit amet
+                    </div>
+                    <a href="#" class="f-primary-b f-more f-title-smallest">Read more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="b-infoblock">
+    <div class="row">
+        <div class="col-sm-6 col-lg-3 col-xs-12">
+            <div>
+                <h4 class="f-primary-b b-h4-special f-h4-special c-primary">product price filter</h4>
+                @@include('../shared/product_price_filter.html')
+            </div>
+            <div class="b-shortcode-example b-shortcode-example--big-indent">
+                <h4 class="f-primary-b b-h4-special f-h4-special c-primary">colors filter</h4>
+                @@include('../shared/colors_filter.html')
+            </div>
+        </div>
+        <div class="col-sm-6 col-lg-3 col-xs-12 b-categories-filter">
+            <h4 class="f-primary-b b-h4-special f-h4-special c-primary">Blog Categories</h4>
+            @@include('../shared/web-categories.html')
+        </div>
+        <div class="col-sm-6 col-lg-3 col-xs-12">
+            <h4 class="f-primary-b b-h4-special f-h4-special c-primary">popular product</h4>
+            @@include('../shared/popular_product.html')
+        </div>
+    </div>
+</div>
+<div class="b-infoblock">
+    <div class="row">
+        <div class="col-sm-6 col-lg-3 col-xs-12">
+            <h4 class="f-primary-b b-h4-special f-h4-special c-primary">testemonial widget</h4>
+            @@include('../shared/mention-short-item.html')
+        </div>
+        <div class="col-sm-6 col-lg-3 col-xs-12">
+            <h4 class="f-primary-b b-h4-special f-h4-special c-primary">Calendar widget</h4>
+
+            <div class="datepicker b-datapicker-reset">
+
+            </div>
+        </div>
+        <div class="col-sm-6 col-lg-3 col-xs-12">
+            <h4 class="f-primary-b b-h4-special f-h4-special c-primary">contact widget</h4>
+
+            <div>
+                @@include('../shared/contact_widget.html')
+            </div>
+        </div>
+        <div class="col-sm-6 col-lg-3 col-xs-12">
+            <h4 class="f-primary-b b-h4-special f-h4-special c-primary">contact info</h4>
+            <div class="row b-google-map__info-window-address">
+                @@include('../shared/contact_info.html')
+            </div>
+        </div>
+    </div>
+</div>
+<div class="b-infoblock">
+    <div class="row">
+        <div class="col-sm-6 col-lg-3 col-xs-12">
+            <h4 class="f-primary-b b-h4-special f-h4-special c-primary">like us on facebook</h4>
+
+            <div class="b-wiget-fb">
+                <div class="b-wiget-fb-content" id="fb-root">
+                    <div class="fb-like-box" data-width="285" data-href="https://www.facebook.com/FacebookDevelopers"
+                         data-colorscheme="light" data-show-faces="true" data-header="false" data-stream="false"
+                         data-show-border="false"></div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-lg-3 col-xs-12">
+            <h4 class="f-primary-b b-h4-special f-h4-special c-primary">twitter feeds</h4>
+
+            <div>
+                <div class="b-twitter-feeds__item">
+                    <div class="b-twitter-feeds__item_name f-twitter-feeds__item_name f-primary-b"><i
+                            class="fa fa-twitter"></i> frexy studio
+                    </div>
+                    <div class="b-twitter-feeds__item_twit f-twitter-feeds__item_twit">
+                        Lorem ipsum dolor sit amet, consectetur adip iscing elit. Curabitur ut blandit sapien. <a
+                            href="http://t.co/hd3sk" target="_blank">http://t.co/hd3sk</a>
+                    </div>
+                    <div class="b-twitter-feeds__item_date f-twitter-feeds__item_date f-primary-it c-senary">2 days
+                        ago
+                    </div>
+                </div>
+                <div class="b-twitter-feeds__item b-default-top-indent">
+                    <div class="b-twitter-feeds__item_name f-twitter-feeds__item_name f-primary-b"><i
+                            class="fa fa-twitter"></i> John Doe
+                    </div>
+                    <div class="b-twitter-feeds__item_twit f-twitter-feeds__item_twit">
+                        Lorem ipsum dolor sit amet, consectetur adip iscing elit. Curabitur ut blandit sapien. <a
+                            href="http://t.co/hd3sk" target="_blank">http://t.co/hd3sk</a>
+                    </div>
+                    <div class="b-twitter-feeds__item_date f-twitter-feeds__item_date f-primary-it c-senary">2 days
+                        ago
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+</div>
+
+@@include('../templates/footer.html')
+
+</body>
+</html>
