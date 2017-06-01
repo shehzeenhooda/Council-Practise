@@ -32,7 +32,7 @@
 <script src="<?php bloginfo("template_url"); ?>/js/bootstrap.min.js"></script>
 <!-- end bootstrap -->
 <script src="<?php bloginfo("template_url"); ?>/js/masonry.pkgd.min.js"></script>
-<script src='js/imagesloaded.pkgd.min.js'></script>
+<script src='<?php bloginfo("template_url"); ?>/js/imagesloaded.pkgd.min.js'></script>
 <!-- bxslider -->
 <script src="<?php bloginfo("template_url"); ?>/js/bxslider/jquery.bxslider.min.js"></script>
 <!-- end bxslider -->

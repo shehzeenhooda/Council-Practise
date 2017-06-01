@@ -1,4 +1,5 @@
-<?php get_header(); ?>
+<?php //all pages load by this page
+ get_header(); ?>
 <?php if ( have_posts() ) : ?>
 <?php while ( have_posts() ) : the_post(); ?>
   <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
