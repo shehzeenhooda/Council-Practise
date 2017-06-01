@@ -55,8 +55,10 @@
         <div class="b-top-nav-show-slide f-top-nav-show-slide b-right j-top-nav-show-slide"><i class="fa fa-align-justify"></i></div>
         <nav class="b-top-nav f-top-nav b-right j-top-nav">
             <ul class="b-top-nav__1level_wrap">
-      <li class="b-top-nav__1level f-top-nav__1level is-active-top-nav__1level f-primary-b"><a href="homepage-1-index.html">Home </a>
-      </li>
+
+              <li class="b-top-nav__1level is-active-top-nav__1level f-top-nav__1level f-primary-b">
+                 <a href="/"><i class="fa fa-folder-open b-menu-1level-ico"></i>Home</a>
+               </li>
       <li class="b-top-nav__1level f-top-nav__1level f-primary-b">
           <a href="contact_us.html"><i class="fa fa-folder-open b-menu-1level-ico"></i>Event Managment<span class="b-ico-dropdown"><i class="fa fa-arrow-circle-down"></i></span></a>
           <div class="b-top-nav__dropdomn">
@@ -67,8 +69,15 @@
               </ul>
           </div>
       </li>
-      <li class="b-top-nav__1level f-top-nav__1level is-active-top-nav__1level f-primary-b"><a href="homepage-1-index.html"><i class="fa fa-home b-menu-1level-ico"></i>About Us</a>
-      </li>
+      <li class="b-top-nav__1level f-top-nav__1level f-primary-b">
+         <a href="contact_us.html"><i class="fa fa-folder-open b-menu-1level-ico"></i>Contact us</a>
+       </li>
+       <li class="b-top-nav__1level f-top-nav__1level f-primary-b">
+          <a href="/login"><i class="fa fa-folder-open b-menu-1level-ico"></i>Login</a>
+        </li>
+        <li class="b-top-nav__1level f-top-nav__1level f-primary-b">
+           <a href="/logout"><i class="fa fa-folder-open b-menu-1level-ico"></i>Logout</a>
+         </li>
   </ul>
 
         </nav>
