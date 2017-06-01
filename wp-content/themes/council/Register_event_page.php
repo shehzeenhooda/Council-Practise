@@ -2,7 +2,9 @@
     /**
     * Template Name: Register event Page
     */
+    if(is_user_logged_in()==false){ wp_redirect('http://council/login/');}
 ?>
+
     <?php get_header(); ?>
         <div id="primary" class="content-area">
             <main id="main" class="site-main" role="main">

@@ -1,4 +1,6 @@
-<?php get_header(); ?>
+<?php   if(is_user_logged_in()==false){ wp_redirect('http://council/login/'); }
+get_header();
+  ?>
 
 <div class="j-menu-container"></div>
 

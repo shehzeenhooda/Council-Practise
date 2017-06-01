@@ -70,4 +70,18 @@ function add_event_fields( $event_id, $event ) {
        }
    }
  }
+ add_filter( 'wpmem_login_form', 'my_login_form_filter', 10, 2 );
+
+function my_login_form_filter( $form, $action )
+{
+  $string = 'button-lg';
+   $substr = 'buttons';
+
+      $newstring = str_replace($substr, $string, $form);
+      $newstring = str_replace("Existing Users Log In","Login User",$newstring);
+      $newstring = str_replace("Comments Off on login", "",$newstring);
+
+    return   $newstring;
+}
+
 ?>

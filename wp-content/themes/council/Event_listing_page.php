@@ -2,6 +2,7 @@
     /**
     * Template Name: Event listing page
     */
+    if(is_user_logged_in()==false){ wp_redirect('http://council/login/');}
 ?>
 <?php get_header(); ?>
 <div id="primary" class="content-area">
