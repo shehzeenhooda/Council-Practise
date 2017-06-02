@@ -38,6 +38,9 @@ function display_event_meta_box( $event ) {
    // Retrieve current name of the Director and Movie Rating based on review ID
    $event_time = esc_html( get_post_meta( $event->ID, 'event_time', true ) );
    $event_date = esc_html( get_post_meta( $event->ID, 'event_date', true ) );
+   $event_area = esc_html( get_post_meta( $event->ID, '$event_area', true ) );
+   $event_city = esc_html( get_post_meta( $event->ID, '$event_city', true ) );
+   $event_description = esc_html( get_post_meta( $event->ID, '$event_description', true ) );
 
    echo '<pre>';
    print_r(plugin_dir_path( __FILE__ ));
@@ -52,6 +55,18 @@ function display_event_meta_box( $event ) {
        <tr>
              <td style="width: 100%">Date</td>
              <td><input type="date" size="80" name="event_date" value="<?php echo $event_date; ?>" /></td>
+       </tr>
+       <tr>
+             <td style="width: 100%">Area</td>
+             <td><input type="text" size="80" name="event_area" value="<?php echo $event_area; ?>" /></td>
+       </tr>
+       <tr>
+             <td style="width: 100%">City</td>
+             <td><input type="text" size="80" name="event_city" value="<?php echo $event_city; ?>" /></td>
+       </tr>
+       <tr>
+             <td style="width: 100%">Description</td>
+             <td><textarea id="event_description" placeholder="Message" style="width:100%;" rows="5"><?php echo $event_description; ?></textarea></td>
        </tr>
    </table>
    <?php
@@ -68,6 +83,15 @@ function add_event_fields( $event_id, $event ) {
        if ( isset( $_POST['event_date'] ) && $_POST['event_date'] != '' ) {
            update_post_meta(  $event_id, 'event_date', $_POST['event_date'] );
        }
+       if ( isset( $_POST['event_area'] ) && $_POST['event_area'] != '' ) {
+           update_post_meta(  $event_id, 'event_area', $_POST['event_area'] );
+       }
+       if ( isset( $_POST['event_city'] ) && $_POST['event_city'] != '' ) {
+           update_post_meta(  $event_id, 'event_city', $_POST['event_city'] );
+       }
+       if ( isset( $_POST['event_description'] ) && $_POST['event_description'] != '' ) {
+           update_post_meta(  $event_id, 'event_description', $_POST['event_description'] );
+       }
    }
  }
  add_filter( 'wpmem_login_form', 'my_login_form_filter', 10, 2 );
@@ -79,7 +103,6 @@ function my_login_form_filter( $form, $action )
 
       $newstring = str_replace($substr, $string, $form);
       $newstring = str_replace("Existing Users Log In","Login User",$newstring);
-      $newstring = str_replace("Comments Off on login", "",$newstring);
 
     return   $newstring;
 }

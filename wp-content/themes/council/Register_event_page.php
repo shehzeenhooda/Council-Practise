@@ -34,6 +34,18 @@
                               <input type="time" id="event_time" class="form-control" />
                             </div>
                         </div>
+                        <div class="b-form-row">
+                            <label class="b-form-horizontal__label" for="event_area">Event Area</label>
+                            <div class="b-form-horizontal__input">
+                                <input type="text" id="event_area" class="form-control" />
+                            </div>
+                        </div>
+                        <div class="b-form-row">
+                            <label class="b-form-horizontal__label" for="event_city">Event City</label>
+                            <div class="b-form-horizontal__input">
+                                <input type="text" id="event_city" class="form-control" />
+                            </div>
+                        </div>
 
                         <div class="b-form-row">
                             <label class="b-form-horizontal__label" for="event_description">Event Description</label>
