@@ -101,9 +101,12 @@ function my_login_form_filter( $form, $action )
   $string = 'button-lg';
    $substr = 'buttons';
 
-      $newstring = str_replace($substr, $string, $form);
-      $newstring = str_replace("Existing Users Log In","Login User",$newstring);
 
+ $newstring = str_replace($substr, $string, $form);
+$newstring = str_replace('Existing Users Log In','<div class="container"><div class="b-form-row f-primary-l f-title-big c-secondary">LOGIN USER</div>',$newstring);
+$newstring = str_replace('<fieldset>',   '<div class="row b-form-inline b-form-horizontal"><fieldset>', $newstring);
+$newstring = str_replace('</fieldset>',   '</fieldset></div>', $newstring);
+$newstring = str_replace('</form>',   '</form></div>', $newstring);
     return   $newstring;
 }
 

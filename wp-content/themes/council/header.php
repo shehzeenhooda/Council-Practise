@@ -60,7 +60,7 @@
                  <a href="/"><i class="fa fa-folder-open b-menu-1level-ico"></i>Home</a>
                </li>
       <li class="b-top-nav__1level f-top-nav__1level f-primary-b">
-          <a href="contact_us.html"><i class="fa fa-folder-open b-menu-1level-ico"></i>Event Managment<span class="b-ico-dropdown"><i class="fa fa-arrow-circle-down"></i></span></a>
+          <a href="/"><i class="fa fa-folder-open b-menu-1level-ico"></i>Event Managment<span class="b-ico-dropdown"><i class="fa fa-arrow-circle-down"></i></span></a>
           <div class="b-top-nav__dropdomn">
               <ul class="b-top-nav__2level_wrap">
                   <li class="b-top-nav__2level_title f-top-nav__2level_title">Event Managment</li>
@@ -69,9 +69,6 @@
               </ul>
           </div>
       </li>
-      <li class="b-top-nav__1level f-top-nav__1level f-primary-b">
-         <a href="contact_us.html"><i class="fa fa-folder-open b-menu-1level-ico"></i>Contact us</a>
-       </li>
        <?php } ?>
        <?php if(is_user_logged_in()==false){ ?>
        <li class="b-top-nav__1level f-top-nav__1level f-primary-b">
