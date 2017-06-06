@@ -2,7 +2,7 @@
     /**
     * Template Name: Register event Page
     */
-    if(is_user_logged_in()==false){ wp_redirect('http://council/login/');}
+    if(is_user_logged_in()==false){ wp_redirect(get_home_url().'/login');}
 ?>
 
     <?php get_header(); ?>

@@ -1,6 +1,6 @@
 <?php
 /* Template Name: Register event Processing */
-if(is_user_logged_in()==false){ wp_redirect('http://council/login/');}
+ if(is_user_logged_in()==false){ wp_redirect(get_home_url().'/login'); }
 get_header(); ?>
 
 <div id="primary">
